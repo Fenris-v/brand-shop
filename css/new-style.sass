@@ -1,0 +1,1009 @@
+// sizes
+$containerWidth: 1200px
+$containerPadding: 30px
+$inputHeight: 40px
+
+// colors
+$black: #222222
+$darkGrey: #4d4d4d
+$grey: #898989
+$lightGrey: #cdcdcc
+$white: #ffffff
+$pink: #f16d7f
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+=box-sizing($box-sizing)
+  -moz-box-sizing: $box-sizing
+  -webkit-box-sizing: $box-sizing
+  box-sizing: $box-sizing
+
+=box-shadow($shadow)
+  -moz-box-shadow: $shadow
+  -webkit-box-shadow: $shadow
+  box-shadow: $shadow
+
+=transition($transition)
+  -moz-transition: $transition
+  -o-transition: $transition
+  -webkit-transition: $transition
+  transition: $transition
+
+=transform($transform)
+  -moz-transform: $transform
+  -ms-transform: $transform
+  -o-transform: $transform
+  -webkit-transform: $transform
+  transform: $transform
+
+h1
+  color: $black
+  font-family: Lato, sans-serif
+  font-size: 30px
+  font-weight: bold
+
+h2
+  color: $darkGrey
+  font-family: "Lato - Black", sans-serif
+  font-size: 24px
+  font-weight: 400
+  line-height: 1
+  margin-bottom: 70px
+  text-align: center
+  text-transform: uppercase
+
+p
+  margin-top: 0
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+section
+  margin-bottom: 80px
+
+input, select
+  outline: none
+
+.container
+  margin: 0 auto
+  max-width: $containerWidth
+  padding: 0 $containerPadding
+
+.container_flex
+  display: flex
+  flex-flow: row wrap
+
+
+/*
+  HEADER
+ */
+.header_top
+  border-bottom: 1px solid $lightGrey
+  +box-shadow(0 0 10px rgba(0, 0, 0, 0.17))
+  .container_flex
+    align-items: center
+    padding: 25px $containerPadding
+
+.logo
+  a
+    color: $black
+    display: flex
+    font-family: "Lato Light", sans-serif
+    font-size: 27px
+    line-height: 51px
+    text-decoration: none
+    text-transform: uppercase
+    vertical-align: middle
+  img
+    margin-right: 10px
+  span
+    color: $pink
+    font-family: "Lato - Black", sans-serif
+    font-weight: 400
+
+.searchForm
+  ul
+    display: flex
+    margin-left: 30px
+  li input
+    border: 1px solid $lightGrey
+    height: $inputHeight
+    padding: 0 15px
+  li:first-child input
+    background-color: $lightGrey
+    +border-radius(3px 0 0 3px)
+    border-right: none
+  li:last-child input
+    background-color: transparent
+    border-left: none
+    +border-radius(0 3px 3px 0)
+    height: 16px
+    padding: 11px
+    width: 16px
+
+.cart
+  height: 30px
+  margin-left: auto
+  width: 34px
+  a
+    display: block
+
+.account
+  margin-left: 30px
+  a
+    background-color: $pink
+    color: $white
+    font-family: Lato, sans-serif
+    font-size: 15px
+    padding: 15px 20px
+    text-decoration: none
+    span:after
+      content: url("../images/icons/whiteArrow.png")
+      padding-left: 5px
+
+.mainMenu ul
+  display: flex
+  justify-content: center
+  margin: 0
+  padding: 0
+  text-align: center
+  li
+    +box-sizing(border-box)
+  a
+    box-sizing: border-box
+    color: $black
+    font-family: Lato, sans-serif
+    font-size: 14px
+    font-weight: bold
+    line-height: 50px
+    padding: 15px
+    text-decoration: none
+    text-transform: uppercase
+
+.mainMenu__item_active, .mainMenu a:hover
+  border-bottom: 3px solid $pink
+
+/*
+    FOOTER
+ */
+.footer_top
+  display: flex
+  justify-content: space-between
+  margin-bottom: 80px
+
+.footer_top__desc
+  +box-sizing(border-box)
+  display: inline-block
+  max-width: 40%
+  padding-right: 15px
+  .logo
+    margin-bottom: 30px
+
+.footer_top__desc p
+  color: $grey
+  font-family: Lato, sans-serif
+  font-size: 14px
+
+.footer_top__nav
+  +box-sizing(border-box)
+  padding-right: 15px
+
+.footer_top__nav a
+  color: $grey
+  font-family: Lato, sans-serif
+  font-size: 16px
+  text-decoration: none
+
+.footer_top__nav:last-child
+  padding: 0
+
+.footer_top__nav__title
+  color: $pink
+  font-family: Lato, sans-serif
+  font-size: 18px
+  font-weight: bold
+  margin-bottom: 40px
+  text-transform: uppercase
+
+.footer_top__nav li
+  margin-bottom: 20px
+
+.footer_bg
+  background: $white
+
+.footer_bottom
+  align-items: center
+  display: flex
+  justify-content: space-between
+  padding: 20px 0
+
+.footer_bottom__copyright
+  color: $grey
+  font-family: Lato, sans-serif
+  font-size: 16px
+
+.footer_bottom__social
+  display: flex
+
+.footer_bottom__social__item
+  margin-left: 10px
+
+.footer_bottom__social__item a
+  background: $white
+  display: block
+  height: 30px
+  position: relative
+  width: 30px
+
+.footer_bottom__social__item a:hover
+  background: $pink
+
+.footer_bottom__social__item i
+  color: $darkGrey
+  line-height: 30px
+  text-align: center
+  width: 100%
+
+/*
+  MAIN PAGE
+ */
+.banner__bg
+  background-color: $white
+
+.banner
+  height: 500px
+  position: relative
+
+.banner img
+  height: 500px
+  -o-object-fit: cover
+  object-fit: cover
+  width: 100%
+
+.banner_text
+  border-left: $pink 6px solid
+  color: $black
+  font-family: "Lato - Black", sans-serif
+  font-size: 30px
+  left: 0
+  padding-left: 10px
+  position: absolute
+  text-transform: uppercase
+  top: 50%
+  +transform(translateY(-50%))
+
+.banner_text_big
+  font-size: 40px
+
+.banner_text_pink
+  color: $pink
+
+.categoriesBlocks
+  font-size: 0
+
+.categoriesBlocks a
+  display: block
+  height: 100%
+  +transition(all 0.2s ease 0s)
+  width: 100%
+
+.categoriesBlocks_big
+  display: inline-block
+  height: 540px
+  margin-bottom: 20px
+  position: relative
+  +transition(all 0.2s ease 0s)
+  width: 49%
+
+.categoriesBlocks_big:first-child, .categoriesBlocks_small:nth-child(3n)
+  float: left
+  margin-right: 2%
+
+.categoriesBlocks_big img, .categoriesBlocks_small img
+  height: 100%
+  -o-object-fit: cover
+  object-fit: cover
+  width: 100%
+
+.categoriesBlocks_small
+  display: inline-block
+  height: 260px
+  margin-bottom: 20px
+  position: relative
+  width: 49%
+
+.categoriesBlocks_big a:hover, .categoriesBlocks_small a:hover
+  +box-shadow(10px 10px 10px rgba(0, 0, 0, 0.3))
+  +transform(scale(1.05))
+  +transition(all 0.2s ease 0s)
+
+.categoriesBlocks__text
+  background-color: $white
+  color: $black
+  font-family: "Lato - Black", sans-serif
+  font-size: 18px
+  left: 0
+  padding: 15px
+  position: absolute
+  text-transform: uppercase
+  top: 20px
+
+.categoriesBlocks__text span
+  color: $pink
+  font-size: 30px
+
+.itemWrapper
+  font-size: 0
+
+.itemWrapper h1
+  margin-bottom: 15px
+  text-align: center
+
+.itemWrapper span, .product span
+  color: $grey
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 14px
+  margin-bottom: 60px
+  text-align: center
+
+.items__list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.item
+  margin-bottom: 40px
+  +transition(all 0.2s ease 0s)
+  width: 22%
+
+.item:nth-child(4n)
+  margin-right: 0
+
+.item a, .product a
+  color: $black
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 13px
+  margin-bottom: 15px
+  padding: 0 15px
+  text-decoration: none
+  text-transform: uppercase
+
+.item__price
+  color: $pink
+  font-family: Lato, sans-serif
+  font-size: 16px
+  font-weight: bold
+  padding: 0 15px 20px
+
+.item:hover, .product:hover
+  +box-shadow(0 5px 8px rgba(0, 0, 0, 0.16))
+  +transition(all 0.2s ease 0s)
+
+.item__img
+  height: 280px
+  margin-bottom: 20px
+  position: relative
+
+.item__img img
+  height: 100%
+  object-fit: cover
+  width: 100%
+
+.item__img__cart
+  background-color: $darkGrey
+  bottom: 0
+  left: 0
+  opacity: 0
+  position: absolute
+  right: 0
+  top: 0
+  +transition(all 0.2s ease 0s)
+
+.item:hover .item__img__cart, .product:hover .item__img__cart
+  opacity: 70%
+  +transition(all 0.2s ease 0s)
+
+.item__img a
+  font-family: Lato, sans-serif
+  font-size: 13px
+  font-weight: bold
+  left: 50%
+  position: absolute
+  top: 40%
+  +transform(translateX(-50%))
+  width: 130px
+
+.item:hover .item__img span, .product:hover .item__img span
+  opacity: 100%
+
+.item:hover .item__img a, .product:hover .item__img a
+  border: 1px solid $white
+
+.item__img span
+  color: $white
+  margin: 0
+  opacity: 0
+  padding: 15px 0
+  vertical-align: middle
+
+.item__img span:before
+  content: url("../images/icons/whiteCart.png")
+  vertical-align: middle
+
+.items__link
+  text-align: center
+
+.items__link a
+  background-color: $pink
+  display: inline-block
+  text-decoration: none
+
+.items__link span
+  color: $white
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 16px
+  font-weight: bold
+  margin: 0
+  padding: 20px 25px
+
+.items__link span:after
+  content: "\2192"
+  padding-left: 10px
+
+.bannerBottom
+  font-size: 0
+
+.bannerBottom_left
+  display: inline-block
+  height: 530px
+  position: relative
+  width: 60%
+
+.bannerBottom_left img
+  height: 100%
+  -o-object-fit: cover
+  object-fit: cover
+  width: 100%
+
+.bannerBottom_left__text
+  color: $white
+  font-family: Lato, sans-serif
+  font-size: 30px
+  font-weight: bold
+  left: 40px
+  position: absolute
+  text-transform: uppercase
+  top: 20%
+
+.bannerBottom_left__text_big
+  font-size: 40px
+
+.bannerBottom_left__text_big span
+  color: $pink
+
+.bannerBottom_right
+  background-color: $black
+  box-sizing: border-box
+  display: inline-block
+  height: 530px
+  padding: 30px
+  vertical-align: top
+  width: 40%
+
+.bannerBottom_right__item
+  margin-bottom: 40px
+
+.bannerBottom_right__item__icon
+  display: inline-block
+  margin-right: 5%
+  width: 20%
+
+.bannerBottom_right__item__text
+  display: inline-block
+  width: 75%
+
+.bannerBottom_right__item__text h2, .quality__item h2
+  color: $white
+  font-family: Lato, sans-serif
+  font-size: 20px
+  font-weight: bold
+
+.bannerBottom_right__item__text p, .quality__item p
+  color: $white
+  font-family: Lato, sans-serif
+  font-size: 14px
+  line-height: 25px
+
+.s_feedback
+  background: url("../images/main/feedbackBg.png")
+  background-size: cover
+  height: 440px
+
+.feedback
+  font-size: 0
+
+.feedback_half
+  box-sizing: border-box
+  display: inline-block
+  height: 440px
+  position: relative
+  width: 50%
+
+.feedback_half:first-child
+  border-right: 1px solid $white
+
+.feedback__item
+  padding-right: 50px
+  position: absolute
+  top: 100px
+
+.feedback__item__img
+  display: inline-block
+  margin-right: 5%
+  vertical-align: top
+  width: 20%
+
+.feedback__item__img img
+  +border-radius(40px)
+  height: 80px
+  width: 80px
+
+.feedback__item__text
+  color: $black
+  display: inline-block
+  font-family: Lato, sans-serif
+  font-size: 16px
+  font-style: italic
+  width: 75%
+
+.feedback__item__name
+  color: $black
+  font-family: "Lato Light", sans-serif
+  font-size: 12px
+  margin-top: 20px
+
+.feedback__item__name span
+  color: $pink
+  font-family: "Lato - Bold", sans-serif
+  font-size: 16px
+  font-weight: bold
+
+.formSubscribe
+  +box-sizing(border-box)
+  left: 50%
+  padding: 0 50px
+  position: absolute
+  top: 50%
+  +transform(translate(-50%, -50%))
+  width: 100%
+
+.formSubscribe__title
+  color: $black
+  font-family: Lato, sans-serif
+  font-size: 24px
+  text-align: center
+  text-transform: uppercase
+
+.formSubscribe__desc
+  color: $black
+  font-family: Lato, sans-serif
+  font-size: 14px
+  margin-bottom: 35px
+  text-align: center
+  text-transform: uppercase
+
+.formSubscribe form
+  font-size: 0
+
+.formSubscribe li:first-child
+  display: inline-block
+  width: 70%
+
+.formSubscribe li:last-child
+  display: inline-block
+  width: 30%
+
+.formSubscribe input
+  border: none
+  box-sizing: border-box
+  color: $black
+  font-family: Lato, sans-serif
+  font-size: 14px
+  padding: 15px 30px
+
+.formSubscribe input[type="text"]
+  background-color: $lightGrey
+  +border-radius(25px 0 0 25px)
+  width: 100%
+
+.formSubscribe input[type="submit"]
+  background-color: $pink
+  +border-radius(0 25px 25px 0)
+  color: $white
+  width: 100%
+
+/*
+    SINGLE PAGE
+ */
+.s_breadcrumbs
+  background-color: $white
+  margin-bottom: 0
+
+.breadcrumbs__wrapper
+  align-items: center
+  display: flex
+  justify-content: space-between
+  padding: 65px 0
+
+.breadcrumbs__wrapper h1
+  margin: 0
+
+.breadcrumbs ul
+  display: flex
+
+.breadcrumbs__item:after
+  color: $grey
+  content: "/"
+  margin: 0 10px
+
+.breadcrumbs__item:last-child:after
+  content: none
+
+.breadcrumbs__item a
+  color: $grey
+  font-family: "Lato Light", sans-serif
+  font-size: 14px
+  font-weight: 300
+  text-decoration: none
+  text-transform: uppercase
+
+.breadcrumbs__item
+  color: $pink
+  font-family: "Lato - Bold", sans-serif
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+.s_arrivalsSlider
+  background-color: $white
+  border: 1px solid $lightGrey
+  margin-bottom: 0
+
+.arrivalsSlider
+  margin: 0 auto
+  text-align: center
+
+.arrivalsSlider img
+  height: 700px
+  margin-bottom: 40px
+  -o-object-fit: cover
+  object-fit: cover
+  position: relative
+  width: auto
+  z-index: 1
+
+.arrivalsDesc
+  background-color: $white
+  border: 1px solid $lightGrey
+  box-sizing: border-box
+  margin-top: -80px
+  padding: 70px
+  position: relative
+  text-align: center
+  z-index: 2
+
+.arrivalsDesc_gender
+  border-bottom: 1px solid $lightGrey
+  color: $pink
+  display: inline-block
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  margin-bottom: 20px
+  text-transform: uppercase
+
+.arrivalsDesc__title
+  color: $darkGrey
+  font-family: "Lato - Black", sans-serif
+  font-size: 18px
+  font-weight: 400
+  margin-bottom: 70px
+  text-transform: uppercase
+
+.arrivalsDesc p
+  color: $darkGrey
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  margin: 0 auto 30px
+  max-width: 650px
+
+.arrivalsDesc__info
+  display: flex
+  margin: 0 auto 30px
+  max-width: 650px
+
+.arrivalsDesc__info__item
+  color: $black
+  flex-grow: 1
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  margin-right: 20px
+  text-transform: uppercase
+
+.arrivalsDesc__info__item:last-child
+  margin-right: 0
+
+.arrivalsDesc__info__item span
+  color: $lightGrey
+
+.arrivalsDesc__price
+  color: $pink
+  font-family: Lato, sans-serif
+  font-size: 24px
+  font-weight: 700
+  margin-bottom: 40px
+
+.arrivalsDesc hr
+  background-color: $white
+  border: none
+  height: 1px
+  margin-bottom: 70px
+  max-width: 650px
+
+.arrivalsDesc__properties ul
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 auto
+  max-width: 650px
+
+.arrivalsDesc__properties__item
+  margin: 0 50px 40px 0
+
+.arrivalsDesc__properties__item:last-child
+  margin-right: 0
+
+.arrivalsDesc__properties__item label
+  color: $black
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 700
+  margin-bottom: 15px
+  text-align: left
+  text-transform: uppercase
+
+.arrivalsDesc__properties__item select, .arrivalsDesc__properties__item input
+  +box-sizing(border-box)
+  color: $lightGrey
+  font-family: Lato, sans-serif
+  font-size: 13px
+  font-weight: 400
+  padding: 10px
+  text-transform: uppercase
+  width: 150px
+
+.arrivalsDesc__properties__item input
+  color: $black
+
+.arrivalsDesc__properties__item_nowrap
+  width: 100%
+
+.arrivalsDesc__properties__item input[type="submit"]
+  background-color: $white
+  border: 1px solid $pink
+  color: $pink
+  font-family: Lato, sans-serif
+  font-size: 16px
+  font-weight: 700
+  max-width: 650px
+  width: 100%
+
+.arrivalsDesc__properties__item input[type="submit"]:hover
+  cursor: pointer
+
+/*
+    PRODUCT PAGE
+ */
+.catalog
+  display: flex
+  justify-content: space-between
+  padding-top: 70px
+
+.catalog_left
+  margin-right: 50px
+  width: 250px
+
+.sideMenu__list__title
+  border-bottom: 1px solid $white
+  border-left: $pink 3px solid
+  +box-sizing(border-box)
+  color: $pink
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 700
+  margin-bottom: 20px
+  padding: 15px
+  text-decoration: none
+  text-transform: uppercase
+  width: 100%
+
+.sideMenu__list__items li
+  +box-sizing(border-box)
+  margin-bottom: 10px
+  padding-left: 25px
+
+.sideMenu__list__items a
+  color: $grey
+  display: inline-block
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 400
+  text-decoration: none
+
+.catalog_right
+  flex-grow: 1
+
+.catalog_right__filter
+  display: flex
+  justify-content: space-between
+  margin-bottom: 40px
+
+.catalog_right__filter__item
+  width: 30%
+
+.catalog_right__filter__item__title
+  color: $grey
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 700
+  margin-bottom: 10px
+  text-transform: uppercase
+
+.catalog_right__filter__item__properties__list
+  display: flex
+  flex-wrap: wrap
+
+.catalog_right__filter__item__properties__list li
+  line-height: 30px
+
+.catalog_right__filter__item__properties__list a
+  color: $grey
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  text-decoration: none
+
+.tags li:after
+  content: "|"
+  margin: 0 10px
+
+.tags li:last-child:after
+  content: none
+
+.sizes li
+  margin-right: 25px
+
+.temp
+  line-height: 30px
+
+.catalog_right__filter__item__price
+  display: flex
+  justify-content: space-between
+
+.catalog_right__filter__item__price__value
+  color: $grey
+  font-family: "Open Sans", sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 30px
+
+.catalog_right__sort
+  background-color: $white
+  display: flex
+  margin-bottom: 50px
+
+.catalog_right__sort__item
+  display: flex
+  margin-right: 10px
+  padding: 10px
+
+.catalog_right__sort__item__name, .catalog_right__sort__item__value
+  background-color: $white
+  border: 1px solid $white
+  padding: 0 10px
+
+.catalog_right__sort__item__name
+  border-right: none
+
+.catalog_right__sort__item__name, .catalog_right__sort__item__value a
+  color: $grey
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 26px
+  text-decoration: none
+
+.catalog_right__sort__item__value a:after
+  content: url("../images/icons/arrow-bottom.png")
+  margin-left: 10px
+
+.product
+  margin-bottom: 40px
+  +transition(all 0.2s ease 0s)
+  width: 32%
+
+.items__paging
+  align-items: center
+  display: flex
+  justify-content: space-between
+
+.items__paging__numbs
+  border: 1px solid $white
+
+.items__paging__numbs ul
+  display: flex
+
+.items__paging__numbs a, .items__paging__numbs li
+  color: $lightGrey
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+  padding: 5px
+  text-decoration: none
+
+.items__paging__numbs li
+  line-height: 36px
+
+.items__paging__numbs a:hover
+  color: $pink
+
+.items__paging__link a
+  border: 1px solid $pink
+  +border-radius(3px)
+  color: $pink
+  display: block
+  font-family: Lato, sans-serif
+  font-size: 16px
+  font-weight: bold
+  line-height: 26px
+  padding: 10px 40px
+  text-decoration: none
+
+.s_quality
+  background-color: $black
+  margin-bottom: 0
+
+.quality
+  align-items: center
+  display: flex
+  justify-content: space-between
+  padding: 70px 0
+
+.quality__item
+  margin-right: 50px
+  text-align: center
+
+.quality__item:last-child
+  margin-right: 0
+
+.quality__item h2
+  margin-bottom: 20px
