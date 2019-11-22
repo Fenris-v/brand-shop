@@ -1,75 +1,8 @@
-// sizes
-$containerWidth: 1200px
-$containerPadding: 30px
-$inputHeight: 40px
-
-// colors
-$black: #222222
-$darkGrey: #4d4d4d
-$grey: #898989
-$bannerGrey: #e8e8e8
-$lightGrey: #cdcdcc
-$white: #ffffff
-$pink: #f16d7f
-
-=border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  border-radius: $radius
-
-=box-sizing($box-sizing)
-  -moz-box-sizing: $box-sizing
-  -webkit-box-sizing: $box-sizing
-  box-sizing: $box-sizing
-
-=box-shadow($shadow)
-  -moz-box-shadow: $shadow
-  -webkit-box-shadow: $shadow
-  box-shadow: $shadow
-
-=transition($transition)
-  -moz-transition: $transition
-  -o-transition: $transition
-  -webkit-transition: $transition
-  transition: $transition
-
-=transform($transform)
-  -moz-transform: $transform
-  -ms-transform: $transform
-  -o-transform: $transform
-  -webkit-transform: $transform
-  transform: $transform
-
-=object-fit($object)
-  -o-object-fit: $object
-  object-fit: $object
-
-h1
-  color: $black
-  font-family: Lato, sans-serif
-  font-size: 30px
-  font-weight: bold
-
-h2
-  color: $darkGrey
-  font-family: "Lato - Black", sans-serif
-  font-size: 24px
-  font-weight: 400
-  line-height: 1
-  margin-bottom: 70px
-  text-align: center
-  text-transform: uppercase
-
-p
-  margin-top: 0
-
-ul
-  list-style-type: none
-  margin: 0
-  padding: 0
-
-section
-  margin-bottom: 80px
+@import "colors"
+@import "sizes"
+@import "fonts"
+@import "prefixes"
+@import "mixin"
 
 input, select
   outline: none
@@ -118,6 +51,8 @@ input, select
   ul
     display: flex
     margin-left: 30px
+    list-style-type: none
+    padding: 0
 
   li input
     border: 1px solid $lightGrey
@@ -168,6 +103,7 @@ input, select
     margin: 0
     padding: 0
     text-align: center
+    list-style: none
 
   &__item_active
     border-bottom: 3px solid $pink
@@ -193,7 +129,7 @@ input, select
   &_top
     display: flex
     justify-content: space-between
-    margin-bottom: 80px
+    margin-bottom: $marginBottom
 
     &__desc
       +box-sizing(border-box)
@@ -202,9 +138,7 @@ input, select
       padding-right: 15px
 
       p
-        color: $grey
-        font-family: Lato, sans-serif
-        font-size: 14px
+        @include font($color: $grey, $size: $littleFont)
 
       .logo
         margin-bottom: 30px
@@ -216,21 +150,20 @@ input, select
       &:last-child
         padding: 0
 
+      ul
+        list-style: none
+        padding: 0
+
       li
         margin-bottom: 20px
 
       &__title
-        color: $pink
-        font-family: Lato, sans-serif
-        font-size: 18px
-        font-weight: bold
+        @include font($pink, $mainFont, bold, 18px)
         margin-bottom: 40px
         text-transform: uppercase
 
       a
-        color: $grey
-        font-family: Lato, sans-serif
-        font-size: 16px
+        @include font($grey)
         text-decoration: none
 
   &_bg
@@ -243,6 +176,7 @@ input, select
     padding: 20px 0
 
     &__copyright
+      @include font($grey)
       color: $grey
       font-family: Lato, sans-serif
       font-size: 16px
@@ -254,6 +188,7 @@ input, select
         margin-left: 10px
 
         a
+          +transition(all 0.4s ease 0s)
           background: $white
           display: block
           height: 30px
@@ -262,6 +197,7 @@ input, select
 
         a:hover
           background: $pink
+          +transition(all 0.4s ease 0s)
 
         i
           color: $darkGrey
@@ -272,6 +208,9 @@ input, select
 /*
   MAIN PAGE
  */
+.s_banner, .s_categoriesBlocks, .s_items, .s_bannerBottom, .s_feedback, .s_arrivalsDesc, .s_also
+  margin-bottom: $marginBottom
+
 .banner__bg
   background-color: $bannerGrey
 
@@ -313,7 +252,7 @@ input, select
   a
     display: block
     height: 100%
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
     width: 100%
 
   &_big
@@ -321,7 +260,7 @@ input, select
     height: 540px
     margin-bottom: 20px
     position: relative
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
     width: 49%
 
   &_small
@@ -341,7 +280,7 @@ input, select
   &_big a:hover, &_small a:hover
     +box-shadow(10px 10px 10px rgba(0, 0, 0, 0.3))
     +transform(scale(1.05))
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
 
   &__text
     background-color: $white
@@ -362,14 +301,13 @@ input, select
   font-size: 0
 
   h1
+    @include font($black, $mainFont, bold, $h1Size)
     margin-bottom: 15px
     text-align: center
 
   span
-    color: $grey
+    @include font($grey, $mainFont, normal, $littleFont)
     display: block
-    font-family: Lato, sans-serif
-    font-size: 14px
     margin-bottom: 60px
     text-align: center
 
@@ -380,24 +318,19 @@ input, select
 
 .item
   margin-bottom: 40px
-  +transition(all 0.2s ease 0s)
+  +transition(all 0.4s ease 0s)
   width: 22%
 
   a
-    color: $black
+    @include font($size: $littleFont)
     display: block
-    font-family: Lato, sans-serif
-    font-size: 13px
     margin-bottom: 15px
     padding: 0 15px
     text-decoration: none
     text-transform: uppercase
 
   &__price
-    color: $pink
-    font-family: Lato, sans-serif
-    font-size: 16px
-    font-weight: bold
+    @include font($pink, $mainFont, bold)
     padding: 0 15px 20px
 
   &:nth-child(4n)
@@ -405,7 +338,7 @@ input, select
 
   &:hover
     +box-shadow(0 5px 8px rgba(0, 0, 0, 0.16))
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
 
   &__img
     height: 280px
@@ -418,17 +351,14 @@ input, select
       width: 100%
 
     a
-      font-family: Lato, sans-serif
-      font-size: 13px
-      font-weight: bold
       left: 50%
       position: absolute
       top: 40%
       +transform(translateX(-50%))
-      width: 130px
+      width: 60%
 
     span
-      color: $white
+      @include font($white, $mainFont, normal, $littleFont)
       margin: 0
       opacity: 0
       padding: 15px 0
@@ -437,6 +367,7 @@ input, select
       &:before
         content: url("../images/icons/whiteCart.png")
         vertical-align: middle
+        margin-right: 10px
 
     &__cart
       background-color: $darkGrey
@@ -446,11 +377,11 @@ input, select
       position: absolute
       right: 0
       top: 0
-      +transition(all 0.2s ease 0s)
+      +transition(all 0.4s ease 0s)
 
   &:hover .item__img__cart
     opacity: 70%
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
 
   &:hover .item__img span
     opacity: 100%
@@ -468,11 +399,8 @@ input, select
     text-decoration: none
 
   span
-    color: $white
+    @include font($white, $mainFont, bold)
     display: block
-    font-family: Lato, sans-serif
-    font-size: 16px
-    font-weight: bold
     margin: 0
     padding: 20px 25px
 
@@ -495,24 +423,21 @@ input, select
       width: 100%
 
     &__text
-      color: $white
-      font-family: Lato, sans-serif
-      font-size: 30px
-      font-weight: bold
+      @include font($white, $mainFont, bold, $bannerMiddleFont)
       left: 40px
       position: absolute
       text-transform: uppercase
       top: 20%
 
       &_big
-        font-size: 40px
+        font-size: $bannerBigFont
 
         span
           color: $pink
 
   &_right
     background-color: $black
-    box-sizing: border-box
+    +box-sizing(border-box)
     display: inline-block
     height: 530px
     padding: 30px
@@ -532,28 +457,21 @@ input, select
         width: 75%
 
         h2
-          color: $white
-          font-family: Lato, sans-serif
-          font-size: 20px
-          font-weight: bold
+          @include font($white, $mainFont, bold, $h2Size)
+          line-height: 1
+          text-align: center
+          text-transform: uppercase
 
         p
-          color: $white
-          font-family: Lato, sans-serif
-          font-size: 14px
+          @include font($white, $mainFont, normal, $littleFont)
           line-height: 25px
 
 .quality__item
   h2
-    color: $white
-    font-family: Lato, sans-serif
-    font-size: 20px
-    font-weight: bold
+    @include font($white, $mainFont, bold, $h2Size)
 
   p
-    color: $white
-    font-family: Lato, sans-serif
-    font-size: 14px
+    @include font($white, $mainFont, normal, $littleFont)
     line-height: 25px
 
 .s_feedback
@@ -565,7 +483,7 @@ input, select
   font-size: 0
 
   &_half
-    box-sizing: border-box
+    +box-sizing(border-box)
     display: inline-block
     height: 440px
     position: relative
@@ -591,24 +509,17 @@ input, select
         width: 80px
 
     &__text
-      color: $black
+      @include font()
       display: inline-block
-      font-family: Lato, sans-serif
-      font-size: 16px
       font-style: italic
       width: 75%
 
     &__name
-      color: $black
-      font-family: "Lato Light", sans-serif
-      font-size: 12px
+      @include font($black, $lightFont, normal, $littleFont)
       margin-top: 20px
 
       span
-        color: $pink
-        font-family: "Lato - Bold", sans-serif
-        font-size: 16px
-        font-weight: bold
+        @include font($pink, $boldFont, bold)
 
 .formSubscribe
   +box-sizing(border-box)
@@ -620,22 +531,21 @@ input, select
   width: 100%
 
   &__title
-    color: $black
-    font-family: Lato, sans-serif
-    font-size: 24px
+    @include font($size: 24px)
     text-align: center
     text-transform: uppercase
 
   &__desc
-    color: $black
-    font-family: Lato, sans-serif
-    font-size: 14px
+    @include font($size: $littleFont)
     margin-bottom: 35px
     text-align: center
     text-transform: uppercase
 
   form
-    font-size: 0
+    display: flex
+
+    ul
+      width: 100%
 
   li
     &:first-child
@@ -647,11 +557,9 @@ input, select
       width: 30%
 
   input
+    @include font($size: $littleFont)
     border: none
-    box-sizing: border-box
-    color: $black
-    font-family: Lato, sans-serif
-    font-size: 14px
+    +box-sizing(border-box)
     padding: 15px 30px
 
     &[type="text"]
@@ -659,7 +567,7 @@ input, select
       +border-radius(25px 0 0 25px)
       width: 100%
 
-    input[type="submit"]
+    &[type="submit"]
       background-color: $pink
       +border-radius(0 25px 25px 0)
       color: $white
@@ -669,7 +577,7 @@ input, select
     SINGLE PAGE
  */
 .s_breadcrumbs
-  background-color: $white
+  background-color: $lightBg
   margin-bottom: 0
 
 .breadcrumbs
@@ -680,37 +588,34 @@ input, select
     padding: 65px 0
 
     h1
+      @include font($darkGrey, $mainFont, bold, $h1Size)
       margin: 0
 
   ul
     display: flex
+    list-style: none
+    margin: 0
 
   &__item
-    color: $pink
-    font-family: "Lato - Bold", sans-serif
-    font-size: 14px
-    font-weight: 700
+    @include font($pink, $boldFont, bold, $littleFont)
     text-transform: uppercase
+    padding-left: 10px
 
     &:after
       color: $grey
       content: "/"
-      margin: 0 10px
 
     &:last-child:after
       content: none
 
     a
-      color: $grey
-      font-family: "Lato Light", sans-serif
-      font-size: 14px
-      font-weight: 300
+      @include font($grey, $mainFont, 300, $littleFont)
+      padding: 0 10px
       text-decoration: none
       text-transform: uppercase
 
 .s_arrivalsSlider
-  background-color: $white
-  border: 1px solid $lightGrey
+  background-color: $lightGreyBg
   margin-bottom: 0
 
 .arrivalsSlider
@@ -728,7 +633,7 @@ input, select
 .arrivalsDesc
   background-color: $white
   border: 1px solid $lightGrey
-  box-sizing: border-box
+  +box-sizing(border-box)
   margin-top: -80px
   padding: 70px
   position: relative
@@ -736,29 +641,20 @@ input, select
   z-index: 2
 
   &_gender
+    @include font($pink, $mainFont, bold, $littleFont)
     border-bottom: 1px solid $lightGrey
-    color: $pink
     display: inline-block
-    font-family: Lato, sans-serif
-    font-size: 14px
-    font-weight: 700
     line-height: 24px
     margin-bottom: 20px
     text-transform: uppercase
 
   &__title
-    color: $darkGrey
-    font-family: "Lato - Black", sans-serif
-    font-size: 18px
-    font-weight: 400
+    @include font(#darkGrey, $blackFont, normal, 18px)
     margin-bottom: 70px
     text-transform: uppercase
 
   p
-    color: $darkGrey
-    font-family: Lato, sans-serif
-    font-size: 14px
-    font-weight: 300
+    @include font(#darkGrey, $mainFont, 300, $littleFont)
     line-height: 24px
     margin: 0 auto 30px
     max-width: 650px
@@ -769,11 +665,8 @@ input, select
     max-width: 650px
 
     &__item
-      color: $black
+      @include font($size: $littleFont, $fontWeight: bold)
       flex-grow: 1
-      font-family: Lato, sans-serif
-      font-size: 14px
-      font-weight: 700
       line-height: 24px
       margin-right: 20px
       text-transform: uppercase
@@ -785,20 +678,19 @@ input, select
         color: $lightGrey
 
   &__price
-    color: $pink
-    font-family: Lato, sans-serif
-    font-size: 24px
-    font-weight: 700
+    @include font($pink, $mainFont, bold, 24px)
     margin-bottom: 40px
 
   hr
-    background-color: $white
+    background-color: $lightGrey
     border: none
     height: 1px
     margin-bottom: 70px
     max-width: 650px
 
   &__properties ul
+    list-style: none
+    padding: 0
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -812,21 +704,15 @@ input, select
       margin-right: 0
 
     label
-      color: $black
+      @include font($fontWeight: bold, $size: $littleFont)
       display: block
-      font-family: Lato, sans-serif
-      font-size: 14px
-      font-weight: 700
       margin-bottom: 15px
       text-align: left
       text-transform: uppercase
 
     select, input
+      @include font($color: $blackFont, $size: $littleFont)
       +box-sizing(border-box)
-      color: $lightGrey
-      font-family: Lato, sans-serif
-      font-size: 13px
-      font-weight: 400
       padding: 10px
       text-transform: uppercase
       width: 150px
@@ -850,6 +736,20 @@ input, select
     &_nowrap
       width: 100%
 
+.also
+  h2
+    @include font($darkGrey, $blackFont, normal, $h2Size)
+    line-height: 1
+    margin-bottom: 70px
+    text-align: center
+    text-transform: uppercase
+
+.item
+  span
+    display: block
+    text-align: center
+
+
 /*
     PRODUCT PAGE
  */
@@ -859,95 +759,21 @@ input, select
   padding-top: 70px
 
   &_left
-    margin-right: 50px
-    width: 250px
+    padding-right: 50px
+    width: 15%
 
-  &_right
-    flex-grow: 1
-
-    &__filter
-      display: flex
-      justify-content: space-between
-      margin-bottom: 40px
-
-      &__item
-        width: 30%
-
-        &__title
-          color: $grey
-          font-family: Lato, sans-serif
-          font-size: 14px
-          font-weight: 700
-          margin-bottom: 10px
-          text-transform: uppercase
-
-        &__properties__list
-          display: flex
-          flex-wrap: wrap
-
-          li
-            line-height: 30px
-
-          a
-            color: $grey
-            font-family: Lato, sans-serif
-            font-size: 14px
-            font-weight: 400
-            line-height: 26px
-            text-decoration: none
-
-        &__price
-          display: flex
-          justify-content: space-between
-
-          &__value
-            color: $grey
-            font-family: "Open Sans", sans-serif
-            font-size: 14px
-            font-weight: 400
-            line-height: 30px
-
-    &__sort
-      background-color: $white
-      display: flex
-      margin-bottom: 50px
-
-      &__item
-        display: flex
-        margin-right: 10px
-        padding: 10px
-
-        &__name, &__value
-          background-color: $white
-          border: 1px solid $white
-          padding: 0 10px
-
-          a:after
-            content: url("../images/icons/arrow-bottom.png")
-            margin-left: 10px
-
-        &__name
-          border-right: none
-
-        &__name, &__value a
-          color: $grey
-          display: block
-          font-family: Lato, sans-serif
-          font-size: 14px
-          font-weight: 400
-          line-height: 26px
-          text-decoration: none
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
 
 .sideMenu__list
   &__title
-    border-bottom: 1px solid $white
+    @include font($pink, $mainFont, bold, $littleFont)
+    border-bottom: 1px solid $lightGrey
     border-left: $pink 3px solid
     +box-sizing(border-box)
-    color: $pink
     display: block
-    font-family: Lato, sans-serif
-    font-size: 14px
-    font-weight: 700
     margin-bottom: 20px
     padding: 15px
     text-decoration: none
@@ -960,14 +786,85 @@ input, select
     padding-left: 25px
 
     a
-      color: $grey
+      @include font($grey, $mainFont, normal, $littleFont)
       display: inline-block
-      font-family: Lato, sans-serif
-      font-size: 14px
-      font-weight: 400
       text-decoration: none
 
+.catalog
+  &_right
+    width: 85%
+
+    &__filter
+      display: flex
+      justify-content: space-between
+
+      &__item
+        width: 30%
+
+        &__title
+          @include font($grey, $mainFont, bold, $littleFont)
+          margin-bottom: 10px
+          text-transform: uppercase
+
+        &__properties__list
+          display: flex
+          flex-wrap: wrap
+
+          ul
+            list-style: none
+            padding: 0
+            margin: 0
+
+          li
+            line-height: 30px
+
+          a
+            @include font($grey, $mainFont, normal, $littleFont)
+            line-height: 26px
+            text-decoration: none
+
+        &__price
+          display: flex
+          justify-content: space-between
+
+          &__value
+            @include font($grey, $mainFont, normal, $littleFont)
+            line-height: 30px
+
+    &__sort
+      background-color: $white
+      display: flex
+
+      &__item
+        display: flex
+        margin-right: 10px
+        padding: 10px 10px 10px 0
+
+        &__name, &__value
+          background-color: $lightGreyBg
+          border: 1px solid $lightGrey
+          padding: 0 10px
+
+          a:after
+            content: url("../images/icons/arrow-bottom.png")
+            margin-left: 10px
+
+        &__name
+          border-right: none
+
+        &__name, &__value a
+          @include font($grey, $mainFont, normal, $littleFont)
+          display: block
+          line-height: 26px
+          text-decoration: none
+
+
+
 .tags
+  list-style: none
+  padding: 0
+  margin: 0
+
   li
     &:after
       content: "|"
@@ -977,30 +874,32 @@ input, select
       content: none
 
 .sizes
+  list-style: none
+  padding: 0
+  margin: 0
   li
     margin-right: 25px
+    label
+      @include font($grey, $mainFont, normal, $littleFont)
+      line-height: 26px
 
+//TODO: change
 .temp
   line-height: 30px
 
 .product
   margin-bottom: 40px
-  +transition(all 0.2s ease 0s)
+  +transition(all 0.4s ease 0s)
   width: 32%
 
   span
-    color: $grey
+    @include font($white, $mainFont, normal, $littleFont)
     display: block
-    font-family: Lato, sans-serif
-    font-size: 14px
-    margin-bottom: 60px
     text-align: center
 
   a
-    color: $black
+    @include font($black, $mainFont, normal, $littleFont)
     display: block
-    font-family: Lato, sans-serif
-    font-size: 13px
     margin-bottom: 15px
     padding: 0 15px
     text-decoration: none
@@ -1008,11 +907,11 @@ input, select
 
   &:hover
     +box-shadow(0 5px 8px rgba(0, 0, 0, 0.16))
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
 
   &:hover .item__img__cart
     opacity: 70%
-    +transition(all 0.2s ease 0s)
+    +transition(all 0.4s ease 0s)
 
   &:hover .item__img span
     opacity: 100%
@@ -1032,29 +931,26 @@ input, select
       display: flex
 
     a, li
-      color: $lightGrey
+      @include font($lightGrey, $mainFont, bold)
       display: block
-      font-family: Lato, sans-serif
-      font-size: 16px
-      font-weight: bold
       line-height: 26px
       padding: 5px
       text-decoration: none
 
     li
       line-height: 36px
+      &:first-child, &:last-child
+        a
+          color: $pink
 
     a:hover
       color: $pink
 
   &__link a
+    @include font($pink, $mainFont, bold)
     border: 1px solid $pink
     +border-radius(3px)
-    color: $pink
     display: block
-    font-family: Lato, sans-serif
-    font-size: 16px
-    font-weight: bold
     line-height: 26px
     padding: 10px 40px
     text-decoration: none
@@ -1077,4 +973,5 @@ input, select
       margin-right: 0
 
     h2
-      margin-bottom: 20px
+      @include font($white, $mainFont, bold, $h2Size)
+      text-transform: uppercase

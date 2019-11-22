@@ -1,0 +1,10 @@
+@import "colors"
+@import "sizes"
+@import "fonts"
+
+@mixin font($color: $black, $family: $mainFont, $fontWeight: normal, $size: $fontSize)
+  font:
+    size: $size
+    weight: $fontWeight
+    family: $family
+  color: $color
