@@ -1,3 +1,12 @@
+@import "variables"
+
+@mixin font($color: $black, $family: $mainFont, $fontWeight: normal, $size: $fontSize)
+  font:
+    size: $size
+    weight: $fontWeight
+    family: $family
+  color: $color
+
 =border-radius($radius)
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
