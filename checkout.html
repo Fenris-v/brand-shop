@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Single page</title>
+    <title>Сheckout page</title>
     <meta content="Description of page." name="description"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -88,175 +88,78 @@
     </div>
 </section>
 
-<section class="s_arrivalsSlider">
+<section class="s_shipping">
     <div class="container">
-        <div class="arrivalsSlider">
-            <!--            TODO: slider-->
-            <img alt="photo" src="images/single/woman.png">
+        <div class="localTitle">
+            Shipping Address
         </div>
-    </div>
-</section>
-
-<section class="s_arrivalsDesc">
-    <div class="container">
-        <div class="arrivalsDesc">
-            <div class="arrivalsDesc_gender">
-                WOMEN COLLECTION
-            </div>
-            <div class="arrivalsDesc__title">
-                Moschino Cheap And Chic
-            </div>
-            <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-                collaborative architectures before cutting-edge services. Completely visualize parallel core
-                competencies rather than exceptional portals.</p>
-            <div class="arrivalsDesc__info">
-                <div class="arrivalsDesc__info__item">
-                    <span>MATERIAL: </span>COTTON
-                </div>
-                <div class="arrivalsDesc__info__item">
-                    <span>DESIGNER: </span>BINBURHAN
-                </div>
-            </div>
-            <div class="arrivalsDesc__price">
-                $561
-            </div>
-            <hr/>
-            <div class="arrivalsDesc__properties">
+        <div class="shipping">
+            <div class="shipping_half">
                 <form action="#" method="post">
+                    <div class="shipping_half__title">
+                        Check as a guest or register
+                    </div>
+                    <div class="shipping_half__desc">
+                        Register with us for future convenience
+                    </div>
                     <ul>
-                        <li class="arrivalsDesc__properties__item">
-                            <label for="properties__color">
-                                CHOOSE COLOR
+                        <li>
+                            <label>
+                                <input name="reg" type="radio">
+                                checkout as guest
                             </label>
-                            <select id="properties__color" name="color">
-                                <option id="properties__color_red">red</option>
-                                <option id="green">green</option>
-                            </select>
                         </li>
-                        <li class="arrivalsDesc__properties__item">
-                            <label for="properties__size">
-                                CHOOSE SIZE
+                        <li>
+                            <label>
+                                <input checked name="reg" type="radio">
+                                register
                             </label>
-                            <select id="properties__size" name="color">
-                                <option>XXL</option>
-                                <option>L</option>
-                            </select>
-                        </li>
-                        <li class="arrivalsDesc__properties__item">
-                            <label for="properties__quantity">
-                                QUANTITY
-                            </label>
-                            <input id="properties__quantity" name="color" placeholder="quantity">
                         </li>
                     </ul>
-                    <div class="arrivalsDesc__properties__item">
-                        <input type="submit" value="Add to Cart">
+                    <div class="shipping_half__title">
+                        register and save time!
                     </div>
+                    <div class="shipping_half__desc">
+                        Register with us for future convenience
+                    </div>
+                    <ul class="shipping_half__list">
+                        <li><i class="fas fa-angle-double-right"></i> Fast and easy checkout</li>
+                        <li><i class="fas fa-angle-double-right"></i> Easy access to your order history and status</li>
+                    </ul>
+                    <input type="submit" value="Continue">
+                </form>
+            </div>
+            <div class="shipping_half">
+                <form action="#" method="post">
+                    <div class="shipping_half__title">
+                        Already registed?
+                    </div>
+                    <div class="shipping_half__desc">
+                        Please log in below
+                    </div>
+                    <ul class="rightList">
+                        <li>
+                            <label>
+                                EMAIL ADDRESS<span>*</span>
+                                <input type="text">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                PASSWORD<span>*</span>
+                                <input type="text">
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="shipping_half_red">
+                        * Required Fileds
+                    </div>
+                    <input type="submit" value="Continue">
+                    <a href="#">Forgot Password?</a>
                 </form>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="s_also">
-    <div class="container">
-        <div class="also">
-            <h2>you may like also</h2>
-            <div class="items__list">
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item1.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        BLAZE LEGGINGS
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item2.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        ALEXA SWEATER
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item3.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        AGNES TOP
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item4.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        SYLVA SWEATER
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="s_feedback">
-    <div class="container">
-        <div class="feedback">
-            <div class="feedback_half">
-                <!--                TODO: slider-->
-                <div class="feedback__item">
-                    <div class="feedback__item__img">
-                        <img alt="photo" src="images/main/feedback.png">
-                    </div>
-                    <div class="feedback__item__text">
-                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
-                            Aliquam condimentum mattis neque sed pretium”</p>
-                        <div class="feedback__item__name">
-                            <span>Bin Burhan</span><br/>Dhaka, Bd
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feedback_half">
-                <div class="formSubscribe">
-                    <div class="formSubscribe__title">Subscribe</div>
-                    <div class="formSubscribe__desc">FOR OUR NEWLETTER AND PROMOTION</div>
-                    <form action="#" method="post">
-                        <ul>
-                            <li>
-                                <label>
-                                    <input placeholder="Enter Your Email" type="text">
-                                </label>
-                            </li>
-                            <li>
-                                <input type="submit" value="Subscribe">
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <hr/>
     </div>
 </section>
 

@@ -205,7 +205,7 @@ input, select
 /*
   MAIN PAGE
  */
-.s_banner, .s_categoriesBlocks, .s_items, .s_bannerBottom, .s_feedback, .s_arrivalsDesc, .s_also
+.s_banner, .s_categoriesBlocks, .s_items, .s_bannerBottom, .s_feedback, .s_arrivalsDesc, .s_also, .s_shipping
   margin-bottom: $marginBottom
 
 .banner__bg
@@ -856,7 +856,6 @@ input, select
           text-decoration: none
 
 
-
 .tags
   list-style: none
   padding: 0
@@ -874,8 +873,10 @@ input, select
   list-style: none
   padding: 0
   margin: 0
+
   li
     margin-right: 25px
+
     label
       @include font($grey, $mainFont, normal, $littleFont)
       line-height: 26px
@@ -936,6 +937,7 @@ input, select
 
     li
       line-height: 36px
+
       &:first-child, &:last-child
         a
           color: $pink
@@ -972,3 +974,71 @@ input, select
     h2
       @include font($white, $mainFont, bold, $h2Size)
       text-transform: uppercase
+
+/*
+    CHECKOUT PAGE
+ */
+.s_shipping
+  padding-top: $marginBottom
+
+.localTitle
+  @include font($fontWeight: bold)
+
+.shipping
+  padding: 30px
+  display: flex
+
+  &_half
+    width: 50%
+    padding-right: 50px
+
+    &__title
+      @include font($size: $littleFont, $fontWeight: bold)
+      text-transform: uppercase
+      margin-bottom: 10px
+
+    &__desc
+      @include font($grey, $mainFont, normal, $littleFont)
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 30px 0
+
+    li:first-child
+      margin-bottom: 20px
+
+    label
+      @include font($size: $littleFont, $fontWeight: bold)
+      text-transform: uppercase
+      span
+        color: $red
+
+    &__list li
+      @include font($grey, $mainFont, normal, $littleFont)
+
+    input[type="submit"]
+      background: none
+      border: 1px solid $grey
+      padding: 15px 50px
+      text-transform: uppercase
+
+    input[type="text"]
+      width: 390px
+      height: 45px
+      border: 1px solid $grey
+      display: block
+      margin-top: 10px
+
+    &_red
+      @include font($red, $mainFont, normal, $littleFont)
+      margin-bottom: 20px
+
+    a
+      display: inline-block
+      @include font($size: $littleFont, $fontWeight: bold)
+      text-decoration: none
+      margin-left: 30px
+
+.rightList
+  margin-bottom: 10px
