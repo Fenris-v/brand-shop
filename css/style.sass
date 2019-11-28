@@ -11,8 +11,6 @@ input, select
 
 .container_flex
   display: flex
-  flex-flow: row wrap
-
 
 /*
   HEADER
@@ -87,6 +85,7 @@ input, select
     font-family: Lato, sans-serif
     font-size: 15px
     padding: 15px 20px
+    display: block
     text-decoration: none
 
     span:after
@@ -130,7 +129,6 @@ input, select
 
     &__desc
       +box-sizing(border-box)
-      display: inline-block
       max-width: 40%
       padding-right: 15px
 
@@ -205,7 +203,7 @@ input, select
 /*
   MAIN PAGE
  */
-.s_banner, .s_categoriesBlocks, .s_items, .s_bannerBottom, .s_feedback, .s_arrivalsDesc, .s_also, .s_shipping
+.s_banner, .s_categoriesBlocks, .s_items, .s_bannerBottom, .s_feedback, .s_arrivalsDesc, .s_also, .s_shipping, .s_cartPage
   margin-bottom: $marginBottom
 
 .banner__bg
@@ -251,6 +249,7 @@ input, select
     height: 100%
     +transition(all 0.4s ease 0s)
     width: 100%
+    text-decoration: none
 
   &_big
     display: inline-block
@@ -267,7 +266,7 @@ input, select
     position: relative
     width: 49%
 
-  &_big:first-child, &_small:nth-child(3n)
+  &_big:first-child, &_small:nth-child(3)
     float: left
     margin-right: 2%
 
@@ -448,9 +447,11 @@ input, select
         display: inline-block
         margin-right: 5%
         width: 20%
+        vertical-align: middle
 
       &__text
         display: inline-block
+        vertical-align: middle
         width: 75%
 
         h2
@@ -626,6 +627,7 @@ input, select
     position: relative
     width: auto
     z-index: 1
+    max-width: 100%
 
 .arrivalsDesc
   background-color: $white
@@ -1042,3 +1044,118 @@ input, select
 
 .rightList
   margin-bottom: 10px
+
+/*
+  CART PAGE
+  */
+.cartPage
+  table
+    @include font($size: $littleFont)
+    border-collapse: collapse
+    margin-bottom: 40px
+    td
+      border-bottom: 1px solid $grey
+      text-align: center
+      padding: 20px 0
+      &:first-child, &:nth-child(2)
+        text-align: left
+
+  &__list
+    width: 100%
+    &__title td
+      @include font($size: $littleFont, $fontWeight: bold)
+      text-transform: uppercase
+      text-align: left
+      &:nth-child(2)
+        text-align: center !important
+    &__item
+      img
+       width: 100px
+      height: 120px
+      +object-fit(cover)
+      &__title
+        @include font($size: $littleFont, $fontWeight: bold)
+        text-transform: uppercase
+        margin-bottom: 30px
+      &__prop
+        span
+          color: $black
+          font-weight: bold
+      input
+        width: 60px
+        text-align: center
+        padding: 10px
+      a
+        display: inline-block
+        @include font($size: $littleFont, $color: $grey)
+  &__buttons
+    display: flex
+    justify-content: space-between
+    margin-bottom: 80px
+
+.cartPage
+  &__forms
+    display: flex
+    justify-content: space-between
+  &__form
+    width: 31%
+    @include font($fontWeight: bold)
+    text-transform: uppercase
+    ul
+      list-style: none
+      padding: 0
+    li
+      margin-bottom: 20px
+      text-transform: none
+      @include font($size: $littleFont)
+    input, select
+      width: 100%
+      +box-sizing(border-box)
+      padding: 15px 20px
+    input[type="submit"]
+      font-weight: bold
+      background: none
+      border: 1px solid $grey
+      padding: 15px 15px
+      text-transform: uppercase
+      width: auto
+    &_grey
+      background: $lightGreyBg
+      text-align: right
+      padding: 40px
+      +box-sizing(border-box)
+      .subTotal
+        text-transform: uppercase
+        @include font($size: $littleFont)
+        margin-bottom: 20px
+      .grandTotal
+        @include font($black, $mainFont, bold)
+        margin-bottom: 30px
+        text-transform: uppercase
+        span
+          color: $pink
+      hr
+        margin-bottom: 20px
+        border: none
+        background: $grey
+        height: 1px
+.pinkBtn
+  background: $pink
+  @include font($white, $mainFont, bold)
+  text-transform: uppercase
+  display: inline-block
+  text-decoration: none
+  width: 100%
+  text-align: center
+  padding: 20px 0
+
+
+
+.buttonGrey
+  background: none
+  border: 1px solid #898989
+  padding: 15px 50px
+  text-transform: uppercase
+  display: inline-block
+  text-decoration: none
+  @include font($grey)

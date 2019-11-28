@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Single page</title>
+    <title>Cart page</title>
     <meta content="Description of page." name="description"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -89,134 +89,116 @@
     </div>
 </section>
 
-<section class="s_arrivalsSlider">
+<section class="s_cartPage">
     <div class="container">
-        <div class="arrivalsSlider">
-            <!--            TODO: slider-->
-            <img alt="photo" src="images/single/woman.png">
-        </div>
-    </div>
-</section>
-
-<section class="s_arrivalsDesc">
-    <div class="container">
-        <div class="arrivalsDesc">
-            <div class="arrivalsDesc_gender">
-                WOMEN COLLECTION
-            </div>
-            <div class="arrivalsDesc__title">
-                Moschino Cheap And Chic
-            </div>
-            <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-                collaborative architectures before cutting-edge services. Completely visualize parallel core
-                competencies rather than exceptional portals.</p>
-            <div class="arrivalsDesc__info">
-                <div class="arrivalsDesc__info__item">
-                    <span>MATERIAL: </span>COTTON
+        <div class="cartPage">
+            <form action="#" method="post">
+                <table class="cartPage__list">
+                    <tr class="cartPage__list__title">
+                        <td colspan="2">Product Details</td>
+                        <td>unite Price</td>
+                        <td>Quantity</td>
+                        <td>shipping</td>
+                        <td>Subtotal</td>
+                        <td>ACTION</td>
+                    </tr>
+                    <tr class="cartPage__list__item">
+                        <td><img alt="photo" src="images/cart/1.png"></td>
+                        <td>
+                            <div class="cartPage__list__item__title">Mango People T-shirt</div>
+                            <div class="cartPage__list__item__prop"><span>Color:</span> Red</div>
+                            <div class="cartPage__list__item__prop"><span>Size:</span> Xll</div>
+                        </td>
+                        <td>$150</td>
+                        <td><label>
+                            <input type="number" value="2">
+                        </label></td>
+                        <td>FREE</td>
+                        <td>$300</td>
+                        <td><a href="#"><i class="fas fa-times-circle"></i></a></td>
+                    </tr>
+                    <tr class="cartPage__list__item">
+                        <td><img alt="photo" src="images/cart/2.png"></td>
+                        <td>
+                            <div class="cartPage__list__item__title">Mango People T-shirt</div>
+                            <div class="cartPage__list__item__prop"><span>Color:</span> Red</div>
+                            <div class="cartPage__list__item__prop"><span>Size:</span> Xll</div>
+                        </td>
+                        <td>$150</td>
+                        <td><label>
+                            <input type="number" value="2">
+                        </label></td>
+                        <td>FREE</td>
+                        <td>$300</td>
+                        <td><a href="#"><i class="fas fa-times-circle"></i></a></td>
+                    </tr>
+                    <tr class="cartPage__list__item">
+                        <td><img alt="photo" src="images/cart/3.png"></td>
+                        <td>
+                            <div class="cartPage__list__item__title">Mango People T-shirt</div>
+                            <div class="cartPage__list__item__prop"><span>Color:</span> Red</div>
+                            <div class="cartPage__list__item__prop"><span>Size:</span> Xll</div>
+                        </td>
+                        <td>$150</td>
+                        <td><label>
+                            <input type="number" value="2">
+                        </label></td>
+                        <td>FREE</td>
+                        <td>$300</td>
+                        <td><a href="#"><i class="fas fa-times-circle"></i></a></td>
+                    </tr>
+                </table>
+                <div class="cartPage__buttons">
+                    <a class="buttonGrey" href="#">cLEAR SHOPPING CART</a>
+                    <a class="buttonGrey" href="#">cONTINUE sHOPPING</a>
                 </div>
-                <div class="arrivalsDesc__info__item">
-                    <span>DESIGNER: </span>BINBURHAN
-                </div>
-            </div>
-            <div class="arrivalsDesc__price">
-                $561
-            </div>
-            <hr/>
-            <div class="arrivalsDesc__properties">
-                <form action="#" method="post">
-                    <ul>
-                        <li class="arrivalsDesc__properties__item">
-                            <label for="properties__color">
-                                CHOOSE COLOR
-                            </label>
-                            <select id="properties__color" name="color">
-                                <option id="properties__color_red">red</option>
-                                <option id="green">green</option>
-                            </select>
-                        </li>
-                        <li class="arrivalsDesc__properties__item">
-                            <label for="properties__size">
-                                CHOOSE SIZE
-                            </label>
-                            <select id="properties__size" name="color">
-                                <option>XXL</option>
-                                <option>L</option>
-                            </select>
-                        </li>
-                        <li class="arrivalsDesc__properties__item">
-                            <label for="properties__quantity">
-                                QUANTITY
-                            </label>
-                            <input id="properties__quantity" name="color" placeholder="quantity">
-                        </li>
-                    </ul>
-                    <div class="arrivalsDesc__properties__item">
-                        <input type="submit" value="Add to Cart">
+                <div class="cartPage__forms">
+                    <div class="cartPage__form">
+                        Shipping Adress
+                        <ul>
+                            <li>
+                                <label>
+                                    <select name="country">
+                                        <option>Russia</option>
+                                        <option>Other</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input placeholder="State" type="text">
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input placeholder="Postcode / Zip" type="text">
+                                </label>
+                            </li>
+                            <li><input type="submit" value="get a quote"></li>
+                        </ul>
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="s_also">
-    <div class="container">
-        <div class="also">
-            <h2>you may like also</h2>
-            <div class="items__list">
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item1.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
+                    <div class="cartPage__form">
+                        coupon  discount
+                        <ul>
+                            <li>
+                                Enter your coupon code if you have one
+                            </li>
+                            <li>
+                                <label>
+                                    <input placeholder="number" type="text">
+                                </label>
+                            </li>
+                            <li><input type="submit" value="Apply coupon"></li>
+                        </ul>
                     </div>
-                    <a href="#">
-                        BLAZE LEGGINGS
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item2.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        ALEXA SWEATER
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item3.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        AGNES TOP
-                    </a>
-                    <div class="item__price">
-                        $52.00
+                    <div class="cartPage__form cartPage__form_grey">
+                        <div class="subTotal">Sub total         $900</div>
+                        <div class="grandTotal">GRAND TOTAL      <span>$900</span></div>
+                        <hr/>
+                        <a class="pinkBtn" href="#">proceed to checkout</a>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="item__img">
-                        <img alt="item" src="images/single/item4.png">
-                        <div class="item__img__cart"></div>
-                        <a href="#"><span>Add to Cart</span></a>
-                    </div>
-                    <a href="#">
-                        SYLVA SWEATER
-                    </a>
-                    <div class="item__price">
-                        $52.00
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </section>
