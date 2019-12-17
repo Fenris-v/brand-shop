@@ -499,10 +499,10 @@ input[type="button"], input[type="submit"]
 
 .feedback
   font-size: 0
+  display: flex
 
   &_half
     +box-sizing(border-box)
-    display: inline-block
     height: 440px
     position: relative
     width: 50%
@@ -512,8 +512,10 @@ input[type="button"], input[type="submit"]
 
   &__item
     padding-right: 50px
-    position: absolute
-    top: 100px
+    margin-top: 100px
+    //position: absolute
+    //top: 100px
+    //text-align: center
 
     &__img
       display: inline-block
@@ -531,6 +533,8 @@ input[type="button"], input[type="submit"]
       display: inline-block
       font-style: italic
       width: 75%
+      max-height: 240px
+      overflow: hidden
 
     &__name
       @include font($black, $lightFont, normal, $littleFont)
@@ -651,9 +655,8 @@ input[type="button"], input[type="submit"]
     margin-bottom: 40px
     +object-fit(cover)
     position: relative
-    width: auto
     z-index: 1
-    max-width: 100%
+
 
 .arrivalsDesc
   background-color: $white
@@ -804,14 +807,20 @@ input[type="button"], input[type="submit"]
     display: block
     margin-bottom: 20px
     padding: 15px
-    text-decoration: none
     text-transform: uppercase
     width: 100%
+    cursor: pointer
 
-  &__items li
-    +box-sizing(border-box)
-    margin-bottom: 10px
-    padding-left: 25px
+  &__items
+    display: none
+
+    &.active
+      display: block
+
+    li
+      +box-sizing(border-box)
+      margin-bottom: 10px
+      padding-left: 25px
 
     a
       @include font($grey, $mainFont, normal, $littleFont)
@@ -911,10 +920,6 @@ input[type="button"], input[type="submit"]
     label
       @include font($grey, $mainFont, normal, $littleFont)
       line-height: 26px
-
-//TODO: change
-.temp
-  line-height: 30px
 
 .product
   margin-bottom: 40px
@@ -1196,3 +1201,19 @@ input[type="button"], input[type="submit"]
   display: inline-block
   text-decoration: none
   @include font($grey)
+
+.owl-carousel .owl-item img
+  width: auto
+  margin: 0 auto
+
+.owl-dots
+  text-align: center
+
+.owl-dot
+  width: 50px !important
+  height: 3px !important
+  background: $grey !important
+  margin: 30px 5px 0
+
+.owl-dot.active
+  background: $pink !important
