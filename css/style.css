@@ -1585,9 +1585,10 @@ input[type=button], input[type=submit] {
 
 .owl-dot {
   width: 50px !important;
-  height: 3px !important;
+  height: 5px !important;
   background: #898989 !important;
   margin: 30px 5px 0;
+  outline: none;
 }
 
 .owl-dot.active {
