@@ -12,6 +12,9 @@ input, select
 .container_flex
   display: flex
 
+body
+  min-width: 320px
+
 /*
   HEADER
  */
@@ -68,10 +71,18 @@ input, select
       padding: 11px
       width: 16px
 
+input[type="button"], input[type="submit"]
+  cursor: pointer
+
 .cart
   height: 30px
   margin-left: auto
   width: 34px
+  @include transition()
+
+  &:hover
+    transform: scale(1.2)
+    @include transition()
 
   a
     display: block
@@ -87,6 +98,10 @@ input, select
     padding: 15px 20px
     display: block
     text-decoration: none
+
+    &:hover
+      +transition()
+      opacity: 0.7
 
     span:after
       content: url("../images/icons/whiteArrow.png")
@@ -183,7 +198,7 @@ input, select
         margin-left: 10px
 
         a
-          +transition(all 0.4s ease 0s)
+          @include transition
           background: $white
           display: block
           height: 30px
@@ -192,7 +207,7 @@ input, select
 
         a:hover
           background: $pink
-          +transition(all 0.4s ease 0s)
+          @include transition
 
         i
           color: $darkGrey
@@ -247,7 +262,7 @@ input, select
   a
     display: block
     height: 100%
-    +transition(all 0.4s ease 0s)
+    @include transition
     width: 100%
     text-decoration: none
 
@@ -256,7 +271,7 @@ input, select
     height: 540px
     margin-bottom: 20px
     position: relative
-    +transition(all 0.4s ease 0s)
+    @include transition
     width: 49%
 
   &_small
@@ -276,7 +291,7 @@ input, select
   &_big a:hover, &_small a:hover
     +box-shadow(10px 10px 10px rgba(0, 0, 0, 0.3))
     +transform(scale(1.05))
-    +transition(all 0.4s ease 0s)
+    @include transition
 
   &__text
     background-color: $white
@@ -314,7 +329,7 @@ input, select
 
 .item
   margin-bottom: 40px
-  +transition(all 0.4s ease 0s)
+  @include transition
   width: 22%
 
   a
@@ -334,7 +349,7 @@ input, select
 
   &:hover
     +box-shadow(0 5px 8px rgba(0, 0, 0, 0.16))
-    +transition(all 0.4s ease 0s)
+    @include transition
 
   &__img
     height: 280px
@@ -373,11 +388,11 @@ input, select
       position: absolute
       right: 0
       top: 0
-      +transition(all 0.4s ease 0s)
+      @include transition
 
   &:hover .item__img__cart
     opacity: 70%
-    +transition(all 0.4s ease 0s)
+    @include transition
 
   &:hover .item__img span
     opacity: 100%
@@ -393,6 +408,11 @@ input, select
     background-color: $pink
     display: inline-block
     text-decoration: none
+    @include transition()
+
+    &:hover
+      opacity: 0.7
+      @include transition()
 
   span
     @include font($white, $mainFont, bold)
@@ -570,6 +590,12 @@ input, select
       +border-radius(0 25px 25px 0)
       color: $white
       width: 100%
+      @include transition()
+
+      &:hover
+        opacity: 0.7
+        cursor: pointer
+        @include transition()
 
 /*
     SINGLE PAGE
@@ -728,9 +754,12 @@ input, select
         font-weight: 700
         max-width: 650px
         width: 100%
+        @include transition()
 
         &:hover
           cursor: pointer
+          +box-shadow(0 0 10px rgba(0,0,0,0.3))
+          @include transition()
 
     &_nowrap
       width: 100%
@@ -889,7 +918,7 @@ input, select
 
 .product
   margin-bottom: 40px
-  +transition(all 0.4s ease 0s)
+  @include transition
   width: 32%
 
   span
@@ -907,11 +936,11 @@ input, select
 
   &:hover
     +box-shadow(0 5px 8px rgba(0, 0, 0, 0.16))
-    +transition(all 0.4s ease 0s)
+    @include transition
 
   &:hover .item__img__cart
     opacity: 70%
-    +transition(all 0.4s ease 0s)
+    @include transition
 
   &:hover .item__img span
     opacity: 100%
@@ -955,6 +984,11 @@ input, select
     line-height: 26px
     padding: 10px 40px
     text-decoration: none
+    +transition()
+
+    &:hover
+      +box-shadow(0 0 10px rgba(0,0,0,0.3))
+      +transition()
 
 .s_quality
   background-color: $black
@@ -1148,8 +1182,11 @@ input, select
   width: 100%
   text-align: center
   padding: 20px 0
+  @include transition()
 
-
+  &:hover
+    opacity: 0.7
+    @include transition()
 
 .buttonGrey
   background: none

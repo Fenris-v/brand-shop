@@ -13,6 +13,10 @@ input, select {
   display: flex;
 }
 
+body {
+  min-width: 320px;
+}
+
 /* HEADER
  * */
 .header_top {
@@ -74,10 +78,25 @@ input, select {
   width: 16px;
 }
 
+input[type=button], input[type=submit] {
+  cursor: pointer;
+}
+
 .cart {
   height: 30px;
   margin-left: auto;
   width: 34px;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.cart:hover {
+  transform: scale(1.2);
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .cart a {
   display: block;
@@ -94,6 +113,13 @@ input, select {
   padding: 15px 20px;
   display: block;
   text-decoration: none;
+}
+.account a:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  opacity: 0.7;
 }
 .account a span:after {
   content: url("../images/icons/whiteArrow.png");
@@ -482,6 +508,17 @@ input, select {
   background-color: #f16d7f;
   display: inline-block;
   text-decoration: none;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.items__link a:hover {
+  opacity: 0.7;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .items__link span {
   font-size: 16px;
@@ -717,6 +754,18 @@ input, select {
   border-radius: 0 25px 25px 0;
   color: #ffffff;
   width: 100%;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.formSubscribe input[type=submit]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 /*  SINGLE PAGE
@@ -913,9 +962,20 @@ input, select {
   font-weight: 700;
   max-width: 650px;
   width: 100%;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .arrivalsDesc__properties__item input[type=submit]:hover {
   cursor: pointer;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .arrivalsDesc__properties__item_nowrap {
   width: 100%;
@@ -1193,6 +1253,19 @@ input, select {
   line-height: 26px;
   padding: 10px 40px;
   text-decoration: none;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.items__paging__link a:hover {
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .s_quality {
@@ -1469,6 +1542,17 @@ input, select {
   width: 100%;
   text-align: center;
   padding: 20px 0;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.pinkBtn:hover {
+  opacity: 0.7;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .buttonGrey {

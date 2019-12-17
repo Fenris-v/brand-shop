@@ -7,6 +7,12 @@
     family: $family
   color: $color
 
+@mixin transition($transition: all 0.4s ease 0s)
+  -moz-transition: $transition
+  -o-transition: $transition
+  -webkit-transition: $transition
+  transition: $transition
+
 =border-radius($radius)
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
@@ -21,12 +27,6 @@
   -moz-box-shadow: $shadow
   -webkit-box-shadow: $shadow
   box-shadow: $shadow
-
-=transition($transition)
-  -moz-transition: $transition
-  -o-transition: $transition
-  -webkit-transition: $transition
-  transition: $transition
 
 =transform($transform)
   -moz-transform: $transform
