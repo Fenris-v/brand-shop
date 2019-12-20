@@ -1,0 +1,37 @@
+[
+  {
+    "href": "/",
+    "title": "Home",
+    "class": "mainMenu__link"
+  },
+  {
+    "href": "/men/",
+    "title": "Man",
+    "class": "mainMenu__link"
+  },
+  {
+    "href": "/women/",
+    "title": "Women",
+    "class": "mainMenu__link"
+  },
+  {
+    "href": "/kids/",
+    "title": "Kids",
+    "class": "mainMenu__link"
+  },
+  {
+    "href": "/accessories/",
+    "title": "Accessories",
+    "class": "mainMenu__link"
+  },
+  {
+    "href": "/featured/",
+    "title": "Featured",
+    "class": "mainMenu__link"
+  },
+  {
+    "href": "/sales/",
+    "title": "Hot Deals",
+    "class": "mainMenu__link"
+  }
+]

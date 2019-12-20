@@ -146,7 +146,7 @@
     var timeOutCount = Object.keys(timedOutTests).length;
 
     if (timeOutCount > 0) {
-      console.info("%cLeftovers--we timed out before collecting test results for ".concat(timeOutCount == 1 ? 'this' : 'these', ":"), 'color: blue; font-size: large');
+      console.info("%cLeftovers--we timed out before collecting testMenuJS results for ".concat(timeOutCount == 1 ? 'this' : 'these', ":"), 'color: blue; font-size: large');
       var _data2 = {};
 
       for (var _key3 in timedOutTests) {
@@ -596,7 +596,7 @@
   }
 
   var diagScriptId = 'fa-kits-diag';
-  var nodeUnderTestId = 'fa-kits-node-under-test';
+  var nodeUnderTestId = 'fa-kits-node-under-testMenuJS';
   var md5Attr = 'data-md5';
   var detectionIgnoreAttr = 'data-fa-detection-ignore';
   var timeoutAttr = 'data-fa-detection-timeout';
@@ -651,7 +651,7 @@
     var styleTags = Array.from(DOCUMENT.getElementsByTagName('style')).filter(function (t) {
       if (t.hasAttribute(detectionIgnoreAttr)) {
         return false;
-      } // If the browser has loaded the FA5 CSS, let's not test that <style> element.
+      } // If the browser has loaded the FA5 CSS, let's not testMenuJS that <style> element.
       // Its enough that we'll be testing for traces of the corresponding JS being loaded, and testing
       // this <style> would only produce a false negative anyway.
 
@@ -668,7 +668,7 @@
       // Firefox will not return the expected results for getComputedStyle if our iframe has display: none.
 
       diagFrame.setAttribute('style', 'visibility: hidden; position: absolute; height: 0; width: 0;');
-      var testIconId = 'fa-test-icon-' + md5;
+      var testIconId = 'fa-testMenuJS-icon-' + md5;
       var iTag = DOCUMENT.createElement('i');
       iTag.setAttribute('class', 'fa fa-coffee');
       iTag.setAttribute('id', testIconId);
@@ -877,7 +877,7 @@
     var testCount = Object.keys(scriptsToTest).length + Object.keys(cssToTest).length; // The resultsCollectionMaxWait allows for the time between when the tests running under
     // child iframes call postMessage with their results, and when the parent window
     // receives and handles those events with window.onmessage.
-    // Making it configurable allows us to test the scenario where this timeout is exceeded.
+    // Making it configurable allows us to testMenuJS the scenario where this timeout is exceeded.
     // Naming it something very different from "timeout" is to help avoid the potential ambiguity between
     // these two timeout-related settings.
 
@@ -891,8 +891,8 @@
       console.info("Testing ".concat(testCount, " possible conflicts."));
       console.info("We'll wait about ".concat(Math.round(WINDOW.FontAwesomeDetection.timeout / 10) / 100, " seconds while testing these and\n") + "then up to another ".concat(Math.round(WINDOW.FontAwesomeDetection.resultsCollectionMaxWait / 10) / 100, " to allow the browser time\n") + "to accumulate the results. But we'll probably be outta here way before then.\n\n");
       console.info("You can adjust those durations by assigning values to these attributes on the <script> element that loads this detection:");
-      console.info("\t%c".concat(timeoutAttr, "%c: milliseconds to wait for each test before deciding whether it's a conflict."), 'font-weight: bold;', 'font-size: normal;');
-      console.info("\t%c".concat(resultsCollectionMaxWaitAttr, "%c: milliseconds to wait for the browser to accumulate test results before giving up."), 'font-weight: bold;', 'font-size: normal;');
+      console.info("\t%c".concat(timeoutAttr, "%c: milliseconds to wait for each testMenuJS before deciding whether it's a conflict."), 'font-weight: bold;', 'font-size: normal;');
+      console.info("\t%c".concat(resultsCollectionMaxWaitAttr, "%c: milliseconds to wait for the browser to accumulate testMenuJS results before giving up."), 'font-weight: bold;', 'font-size: normal;');
       pollUntil({
         // Give this overall timer a little extra cushion
         maxDuration: masterTimeout,

@@ -1,0 +1,13 @@
+[
+  {
+    "images": [
+      "clearcode.jpg",
+      "codecomplete.jpg",
+      "devops.jpg",
+      "git.jpg",
+      "php.jpg"
+    ],
+    "pathToSmall": "img/small/",
+    "pathToBig": "img/big/"
+  }
+]

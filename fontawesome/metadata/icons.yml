@@ -19790,8 +19790,8 @@ vial:
       - lab
       - sample
       - science
-      - test
-      - test tube
+      - testMenuJS
+      - testMenuJS tube
   styles:
     - solid
   unicode: f492
@@ -19806,8 +19806,8 @@ vials:
       - lab
       - sample
       - science
-      - test
-      - test tube
+      - testMenuJS
+      - testMenuJS tube
   styles:
     - solid
   unicode: f493
