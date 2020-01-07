@@ -1,0 +1,14 @@
+{
+  "result": 1,
+  "items": [
+    {
+      "id_product": 9,
+      "title": "Mango People T-shirt",
+      "price": 31.00,
+      "img": "images/main/item1.png",
+      "href": "single.html"
+    }
+  ],
+  "amount": 31.00
+}
+
