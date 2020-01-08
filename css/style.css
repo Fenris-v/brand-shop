@@ -90,9 +90,9 @@ input[type=button], input[type=submit] {
   -o-transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  position: relative;
 }
 .cart:hover {
-  transform: scale(1.2);
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
@@ -100,6 +100,43 @@ input[type=button], input[type=submit] {
 }
 .cart a {
   display: block;
+}
+.cart__items {
+  background: #ffffff;
+  position: absolute;
+  display: inline;
+  z-index: 1;
+  border: #f16d7f 1px solid;
+  right: -150px;
+  top: 50px;
+  min-width: 500px;
+}
+.cart__items__list {
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Lato, sans-serif;
+  color: #222222;
+  border-collapse: collapse;
+}
+.cart__items__list td {
+  border-bottom: 1px solid #898989;
+  text-align: center;
+  padding: 10px 0;
+}
+.cart__items__list__title {
+  text-transform: uppercase;
+}
+.cart__items__list__title td {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Lato, sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+}
+.cart__items__list__item__title {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .account {

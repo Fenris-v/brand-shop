@@ -79,13 +79,44 @@ input[type="button"], input[type="submit"]
   margin-left: auto
   width: 34px
   @include transition()
+  position: relative
 
   &:hover
-    transform: scale(1.2)
     @include transition()
 
   a
     display: block
+
+  &__items
+    background: #ffffff
+    position: absolute
+    display: inline
+    z-index: 1
+    border: $pink 1px solid
+    right: -150px
+    top: 50px
+    min-width: 500px
+
+    &__list
+      width: 100%
+      @include font($size: $littleFont)
+      border-collapse: collapse
+
+      td
+        border-bottom: 1px solid $grey
+        text-align: center
+        padding: 10px 0
+
+      &__title
+        text-transform: uppercase
+
+        td
+          @include font($size: $littleFont, $fontWeight: bold)
+          text-transform: uppercase
+
+      &__item__title
+        font-weight: bold
+        margin-bottom: 5px
 
 .account
   margin-left: 30px
