@@ -1,11 +1,28 @@
+var cartNotEmpty = false;
+
 $(document).ready(function () {
 
     var cart = new Cart('cart');
-    cart.render($('.test'));
-    console.log(cart.cartItems);
-    console.log(cart);
+
+    if (cart.cartItems.length > 0 && !cartNotEmpty) {
+        cartNotEmpty = true;
+        createCart();
+        console.log(123);
+    }
+
+
+    // cart.render($('.test'));
+
+    // console.log(cart.cartItems);
+
 
     $('.items__list').on('click', function (event) {
+        // console.log(cart.cartItems);
+
+        if (!cartNotEmpty) {
+            createCart();
+            console.log(321);
+        }
 
         var elem = $(event.target);
 
@@ -20,10 +37,6 @@ $(document).ready(function () {
         var price = parseFloat(item.children('.item__price').text().trim().slice(1));
         var img = elem.parent().children('img').attr('src');
         var titleProduct = item.children('a').text().trim();
-        console.log(idProduct);
-        console.log(titleProduct);
-        console.log(cart.amount);
-        console.log(123);
 
         cart.add(idProduct, titleProduct, price, img);
     });
@@ -39,26 +52,6 @@ function Cart(idCart) {
 
     this.loadCartItems();
 }
-
-Cart.prototype.render = function (root) {
-    // var cartDiv = $('<div />', {
-    //     id: this.id,
-    //     text: 'Cart'
-    // });
-    //
-    // var cartItemsDiv = $('<div />', {
-    //     id: this.id + '__items',
-    // });
-    //
-    // var cartItemsList = $('<table><thead><tr><td>Наименование</td><td>Цена</td><td>Удалить</td></tr></thead><tbody id="' + this.id  + '_list"></tbody></table>');
-    //
-    // cartItemsDiv.appendTo(cartDiv);
-    // cartItemsList.appendTo(cartItemsDiv);
-    // cartDiv.appendTo(root);
-    // var cartItemContainer = $('.cart__items__list tbody');
-    //
-    // var cartItem = $('<tr><td><img src="' + this + '"></td><td></td><td></td><td>del</td></tr>')
-};
 
 Cart.prototype.loadCartItems = function () {
     var appendId = '#' + this.id + 'items';
@@ -105,7 +98,7 @@ Cart.prototype.add = function (idProduct, title, price, image) {
 
 Cart.prototype.refresh = function () {
     var cartData = $('#cart_data');
-    cartData.empty(); //Очищаем содержимое контейнера
+    cartData.empty();
     cartData.append('<p>Всего товаров: ' + this.countItems + '</p>');
     cartData.append('<p>Общая сумма: ' + this.amount + '</p>');
     this.renderItemList();
@@ -113,17 +106,18 @@ Cart.prototype.refresh = function () {
 
 Cart.prototype.renderItemList = function () {
     var cartItemsDiv = $('.cart__items__list tbody');
+
     cartItemsDiv.empty();
-    for (var key in this.cartItems)
-    {
+    for (var key in this.cartItems) {
         var cartItemsRow = $('<tr><td><img src="' + this.cartItems[key].image + '"></td><td><div class="cart__items__list__item__title">' + this.cartItems[key].title + '</div><div class="cart__items__list__item__price">$' + this.cartItems[key].price + '</div></td><td>' + this.cartItems[key].id_product + '</td></tr>');
 
-        // var $delButton = $('<button />', {
-        //     class: this.id +'__delete',
-        //     'data-index': key,
-        //     text: 'del'
-        // });
-        // cartItemsRow.append($('<td />').append($delButton));
         cartItemsRow.appendTo(cartItemsDiv);
     }
 };
+
+function createCart() {
+    var cartContainer = $('.cart');
+    var createCart = $('<div class="cart__items"><table class="cart__items__list"><thead><tr class="cart__items__list__title"><td>image</td><td>desc</td><td>quantity</td><td></td></tr></thead><tbody></tbody></table></div>');
+
+    createCart.appendTo(cartContainer);
+}
