@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7055d392-072d-4371-bec6-26079ccdcaef" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+        <option value="CSS File" />
+        <option value="Sass File" />
+        <option value="package.json" />
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1TC2jdj8Ldvb54fWofQ0TLZenBg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\www\geekbrains\testAjaxGalery\img\big" />
+      <recent name="E:\www\geekbrains\testAjaxGalery\img\small" />
+      <recent name="E:\www\geekbrains\testAjaxGalery\img" />
+      <recent name="E:\www\geekbrains" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\geekbrains" />
+      <recent name="E:\www\geekbrains\testAjaxGalery" />
+      <recent name="E:\www\geekbrains\test" />
+      <recent name="E:\www\geekbrains\js" />
+      <recent name="E:\www\geekbrains\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.test.html">
+    <configuration name="cart.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/cart.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/testAjaxGalery/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="scripts.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/testAjaxGalery/scripts.js" working-dir="$PROJECT_DIR$/testAjaxGalery">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.cart.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.html (2)" />
+        <item itemvalue="Node.js.scripts.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7055d392-072d-4371-bec6-26079ccdcaef" name="Default Changelist" comment="" />
+      <created>1572949892690</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572949892690</updated>
+      <workItem from="1572949895271" duration="1137000" />
+      <workItem from="1572951049019" duration="682000" />
+      <workItem from="1572952811398" duration="6194000" />
+      <workItem from="1573576526024" duration="1672000" />
+      <workItem from="1573636601122" duration="67000" />
+      <workItem from="1573736952710" duration="3703000" />
+      <workItem from="1573813729845" duration="17006000" />
+      <workItem from="1574070284507" duration="368000" />
+      <workItem from="1574086749552" duration="8351000" />
+      <workItem from="1574155628110" duration="3313000" />
+      <workItem from="1574165764065" duration="78000" />
+      <workItem from="1574177930635" duration="5354000" />
+      <workItem from="1574241485063" duration="1321000" />
+      <workItem from="1574246973877" duration="617000" />
+      <workItem from="1574420286915" duration="12368000" />
+      <workItem from="1574673382558" duration="34000" />
+      <workItem from="1574697611344" duration="2525000" />
+      <workItem from="1574760184244" duration="56000" />
+      <workItem from="1574760706962" duration="105000" />
+      <workItem from="1574760822682" duration="562000" />
+      <workItem from="1574777853225" duration="1923000" />
+      <workItem from="1574779802105" duration="264000" />
+      <workItem from="1574780177626" duration="3013000" />
+      <workItem from="1574846489066" duration="10948000" />
+      <workItem from="1574932767768" duration="9650000" />
+      <workItem from="1574948803237" duration="104000" />
+      <workItem from="1575883099817" duration="46000" />
+      <workItem from="1576515189899" duration="1410000" />
+      <workItem from="1576575142455" duration="15457000" />
+      <workItem from="1576773726638" duration="1531000" />
+      <workItem from="1576833346668" duration="17324000" />
+      <workItem from="1577699386789" duration="1118000" />
+      <workItem from="1577703984637" duration="1642000" />
+      <workItem from="1577717852655" duration="656000" />
+      <workItem from="1577725433099" duration="106000" />
+      <workItem from="1578562023413" duration="64000" />
+      <workItem from="1578562097194" duration="80000" />
+      <workItem from="1578564091258" duration="1262000" />
+      <workItem from="1578645486927" duration="4114000" />
+    </task>
+    <task id="LOCAL-00001" summary="small fixes">
+      <created>1573578132608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573578132608</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add single and product pages">
+      <created>1573836980639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573836980639</updated>
+    </task>
+    <task id="LOCAL-00003" summary="start works with sass">
+      <created>1574096566018</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574096566018</updated>
+    </task>
+    <task id="LOCAL-00004" summary="start works with sass">
+      <created>1574183238380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574183238380</updated>
+    </task>
+    <task id="LOCAL-00005" summary="edit sass file">
+      <created>1574440984375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574440984375</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add checkout page">
+      <created>1574786163813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574786163813</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add adaptive">
+      <created>1574948313638</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574948313639</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add hover and links on other pages">
+      <created>1576579297705</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576579297705</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add scripts">
+      <created>1576585684916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576585684916</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add hamburger">
+      <created>1576587734858</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576587734858</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add hamburger">
+      <created>1576587895477</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576587895477</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add hamburger">
+      <created>1576588103331</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576588103331</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add hamburger">
+      <created>1576588248139</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576588248139</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add hamburger">
+      <created>1576588414888</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1576588414888</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add hamburger">
+      <created>1576588872675</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576588872675</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add hamburger">
+      <created>1576589452497</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1576589452497</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add hamburger">
+      <created>1576589998670</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1576589998670</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test">
+      <created>1576861050445</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861050445</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="small fixes" />
+    <MESSAGE value="add single and product pages" />
+    <MESSAGE value="start works with sass" />
+    <MESSAGE value="edit sass file" />
+    <MESSAGE value="add checkout page" />
+    <MESSAGE value="add adaptive" />
+    <MESSAGE value="add hover and links on other pages" />
+    <MESSAGE value="add scripts" />
+    <MESSAGE value="add hamburger" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="601" y="321" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1574780010175">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="601" y="321" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1574780010175" />
+    <state x="571" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1574780387903">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="571" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1574780387903" />
+    <state x="585" y="148" key="CommitChangelistDialog2" timestamp="1577725528376">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="-1335" y="148" key="CommitChangelistDialog2/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1575651471287" />
+    <state x="585" y="148" key="CommitChangelistDialog2/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1577725528376" />
+    <state x="92" y="122" width="1736" height="866" key="DiffContextDialog" timestamp="1574779973150">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="92" y="122" width="1736" height="866" key="DiffContextDialog/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1574779973150" />
+    <state x="-1180" y="309" key="FileChooserDialogImpl" timestamp="1577699875082">
+      <screen x="-1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="-1180" y="309" key="FileChooserDialogImpl/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1577699875082" />
+    <state x="740" y="309" key="FileChooserDialogImpl/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576842240446" />
+    <state width="1899" height="352" key="GridCell.Tab.0.bottom" timestamp="1578646049561">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.0.bottom/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
+    <state width="1899" height="352" key="GridCell.Tab.0.center" timestamp="1578646049561">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.0.center/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
+    <state width="1899" height="352" key="GridCell.Tab.0.left" timestamp="1578646049560">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.0.left/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049560" />
+    <state width="1899" height="352" key="GridCell.Tab.0.right" timestamp="1578646049561">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.0.right/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
+    <state width="1899" height="352" key="GridCell.Tab.1.bottom" timestamp="1578646049562">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.bottom/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049562" />
+    <state width="1899" height="352" key="GridCell.Tab.1.center" timestamp="1578646049561">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.center/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
+    <state width="1899" height="352" key="GridCell.Tab.1.left" timestamp="1578646049561">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.left/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
+    <state width="1899" height="352" key="GridCell.Tab.1.right" timestamp="1578646049562">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.right/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049562" />
+    <state width="1899" height="352" key="GridCell.Tab.2.bottom" timestamp="1576855887055">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.2.bottom/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887055" />
+    <state width="1899" height="352" key="GridCell.Tab.2.center" timestamp="1576855887055">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.2.center/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887055" />
+    <state width="1899" height="352" key="GridCell.Tab.2.left" timestamp="1576855887054">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.2.left/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887054" />
+    <state width="1899" height="352" key="GridCell.Tab.2.right" timestamp="1576855887055">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.2.right/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887055" />
+    <state x="461" y="196" key="SettingsEditor" timestamp="1574780487561">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="461" y="196" key="SettingsEditor/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1574780487561" />
+    <state x="552" y="287" key="Vcs.Push.Dialog.v2" timestamp="1576861052146">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="552" y="287" key="Vcs.Push.Dialog.v2/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576861052146" />
+    <state x="769" y="471" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578564100366">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="769" y="471" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578564100366" />
+    <state x="0" y="30" width="1683" height="1039" key="dock-window-1" timestamp="1576774214340">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="0" y="30" width="1683" height="1039" key="dock-window-1/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1576774214340" />
+    <state x="-1329" y="257" width="737" height="596" key="find.popup" timestamp="1577699887180">
+      <screen x="-1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="-1329" y="257" width="737" height="596" key="find.popup/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1577699887180" />
+    <state x="591" y="257" width="737" height="596" key="find.popup/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576847879201" />
+    <state x="616" y="258" width="672" height="677" key="run.anything.popup" timestamp="1578647327449">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="616" y="258" width="672" height="677" key="run.anything.popup/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578647327449" />
+    <state x="-1368" y="213" key="scopes" timestamp="1577699884985">
+      <screen x="-1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="-1368" y="213" key="scopes/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1577699884985" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="geekbrains" type="b2602c69:ProjectViewProjectNode" />
+        <item name="geekbrains" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>
