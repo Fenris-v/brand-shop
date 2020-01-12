@@ -1,11 +1,304 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7055d392-072d-4371-bec6-26079ccdcaef" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
+    <list default="true" id="7055d392-072d-4371-bec6-26079ccdcaef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/dist/jquery.mask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/dist/jquery.mask.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-mask-plugin/src/jquery.mask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/build/release.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/jquery-validation-sri.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_az.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_bg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_bn_BD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_bn_BD.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ca.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_cs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_da.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_de.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_el.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_es.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_es_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_es_AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_es_PE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_es_PE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_et.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_fa.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_fi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_fr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ge.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_gl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_he.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_hr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_hu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_hy_AM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_hy_AM.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_id.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_is.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ja.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ka.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_kk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ko.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_lt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_lv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_mk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_my.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_nl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_no.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_pl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_pt_BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_pt_PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ro.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_si.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sr_lat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sr_lat.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_sv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_th.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_tj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_tj.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_tr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_uk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_ur.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_vi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_zh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/messages_zh_TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_de.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_es_CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_fi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_nl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/dist/localization/methods_pt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/abaRoutingNumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/accept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/additional.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/alphanumeric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/bankaccountNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/bankorgiroaccountNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/bic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/cifES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/cnhBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/cnpjBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/cpfBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/creditcard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/creditcardtypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/currency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/dateFA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/dateITA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/dateNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/extension.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/giroaccountNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/greaterThan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/greaterThanEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/iban.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/integer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/ipv4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/ipv6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/lessThan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/lessThanEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/lettersonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/letterswithbasicpunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/maxfiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/maxsize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/maxsizetotal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/mobileNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/mobileRU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/mobileUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/netmask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/nieES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/nifES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/nipPL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/nisBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/notEqualTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/nowhitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/pattern.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/phoneNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/phonePL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/phoneUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/phoneUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/phonesUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/postalCodeCA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/postalcodeBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/postalcodeIT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/postalcodeNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/postcodeUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/require_from_group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/skip_or_fill_minimum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/statesUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/strippedminlength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/time12h.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/url2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/vinUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/zipcodeUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/additional/ziprange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_bn_BD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_es_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_es_PE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_hy_AM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_sd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_sr_lat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_tj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_ur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/messages_zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/methods_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/methods_es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/methods_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/methods_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/methods_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/src/localization/methods_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bower_components/jquery-validation/validation.jquery.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.json" beforeDir="false" afterPath="$PROJECT_DIR$/cart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/prefixes.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/prefixes.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,19 +337,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.2.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\www\geekbrains\testAjaxGalery\img\big" />
-      <recent name="E:\www\geekbrains\testAjaxGalery\img\small" />
-      <recent name="E:\www\geekbrains\testAjaxGalery\img" />
-      <recent name="E:\www\geekbrains" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\www\geekbrains" />
       <recent name="E:\www\geekbrains\testAjaxGalery" />
@@ -64,30 +351,36 @@
       <recent name="E:\www\geekbrains\js" />
       <recent name="E:\www\geekbrains\css" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\www\geekbrains\testAjaxGalery\img\big" />
+      <recent name="E:\www\geekbrains\testAjaxGalery\img\small" />
+      <recent name="E:\www\geekbrains\testAjaxGalery\img" />
+      <recent name="E:\www\geekbrains" />
+    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.test.html">
-    <configuration name="cart.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/cart.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/testAjaxGalery/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.checkout.html">
+    <configuration name="checkout.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/geekbrains/checkout.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/test.html" useBuiltInWebServerPort="true">
+    <configuration name="product.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/geekbrains/product.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="scripts.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/testAjaxGalery/scripts.js" working-dir="$PROJECT_DIR$/testAjaxGalery">
+    <configuration name="single.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/geekbrains/single.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/geekbrains/test.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.test.html" />
-        <item itemvalue="JavaScript Debug.cart.html" />
+        <item itemvalue="JavaScript Debug.checkout.html" />
+        <item itemvalue="JavaScript Debug.product.html" />
+        <item itemvalue="JavaScript Debug.single.html" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="Node.js.scripts.js" />
+        <item itemvalue="JavaScript Debug.test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +446,9 @@
       <workItem from="1578562097194" duration="80000" />
       <workItem from="1578564091258" duration="1262000" />
       <workItem from="1578645486927" duration="4114000" />
+      <workItem from="1578737236732" duration="9629000" />
+      <workItem from="1578762397799" duration="9536000" />
+      <workItem from="1578823344495" duration="9552000" />
     </task>
     <task id="LOCAL-00001" summary="small fixes">
       <created>1573578132608</created>
@@ -310,9 +606,14 @@
     <MESSAGE value="add scripts" />
     <MESSAGE value="add hamburger" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="add cart, mask for coupon (cart page), validate login &amp; password" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cart, mask for coupon (cart page), validate login &amp; password" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1032" y="214" key="#Configure_Path_Variables" timestamp="1578737366044">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="1032" y="214" key="#Configure_Path_Variables/0.30.1920.1050@0.30.1920.1050" timestamp="1578737366044" />
     <state x="601" y="321" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1574780010175">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -321,11 +622,12 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="571" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1574780387903" />
-    <state x="585" y="148" key="CommitChangelistDialog2" timestamp="1577725528376">
+    <state x="585" y="148" key="CommitChangelistDialog2" timestamp="1578835748196">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="-1335" y="148" key="CommitChangelistDialog2/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1575651471287" />
     <state x="585" y="148" key="CommitChangelistDialog2/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1577725528376" />
+    <state x="585" y="148" key="CommitChangelistDialog2/0.30.1920.1050@0.30.1920.1050" timestamp="1578835748196" />
     <state x="92" y="122" width="1736" height="866" key="DiffContextDialog" timestamp="1574779973150">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -335,54 +637,82 @@
     </state>
     <state x="-1180" y="309" key="FileChooserDialogImpl/0.30.1920.1050/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1577699875082" />
     <state x="740" y="309" key="FileChooserDialogImpl/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576842240446" />
-    <state width="1899" height="352" key="GridCell.Tab.0.bottom" timestamp="1578646049561">
+    <state width="938" height="355" key="GridCell.Tab.0.bottom" timestamp="1578697192289">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.0.bottom/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
-    <state width="1899" height="352" key="GridCell.Tab.0.center" timestamp="1578646049561">
+    <state width="938" height="355" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192289" />
+    <state width="938" height="355" key="GridCell.Tab.0.center" timestamp="1578697192289">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.0.center/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
-    <state width="1899" height="352" key="GridCell.Tab.0.left" timestamp="1578646049560">
+    <state width="938" height="355" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192289" />
+    <state width="938" height="355" key="GridCell.Tab.0.left" timestamp="1578697192288">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.0.left/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049560" />
-    <state width="1899" height="352" key="GridCell.Tab.0.right" timestamp="1578646049561">
+    <state width="938" height="355" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192288" />
+    <state width="938" height="355" key="GridCell.Tab.0.right" timestamp="1578697192289">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.0.right/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
-    <state width="1899" height="352" key="GridCell.Tab.1.bottom" timestamp="1578646049562">
+    <state width="938" height="355" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192289" />
+    <state width="938" height="355" key="GridCell.Tab.1.bottom" timestamp="1578697192290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.1.bottom/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049562" />
-    <state width="1899" height="352" key="GridCell.Tab.1.center" timestamp="1578646049561">
+    <state width="938" height="355" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.1.center" timestamp="1578697192289">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.1.center/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
-    <state width="1899" height="352" key="GridCell.Tab.1.left" timestamp="1578646049561">
+    <state width="938" height="355" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192289" />
+    <state width="938" height="355" key="GridCell.Tab.1.left" timestamp="1578697192289">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.1.left/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049561" />
-    <state width="1899" height="352" key="GridCell.Tab.1.right" timestamp="1578646049562">
+    <state width="938" height="355" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192289" />
+    <state width="938" height="355" key="GridCell.Tab.1.right" timestamp="1578697192290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.1.right/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1578646049562" />
-    <state width="1899" height="352" key="GridCell.Tab.2.bottom" timestamp="1576855887055">
+    <state width="938" height="355" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.2.bottom" timestamp="1578697192290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.2.bottom/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887055" />
-    <state width="1899" height="352" key="GridCell.Tab.2.center" timestamp="1576855887055">
+    <state width="938" height="355" key="GridCell.Tab.2.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.2.center" timestamp="1578697192290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.2.center/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887055" />
-    <state width="1899" height="352" key="GridCell.Tab.2.left" timestamp="1576855887054">
+    <state width="938" height="355" key="GridCell.Tab.2.center/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.2.left" timestamp="1578697192290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.2.left/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887054" />
-    <state width="1899" height="352" key="GridCell.Tab.2.right" timestamp="1576855887055">
+    <state width="938" height="355" key="GridCell.Tab.2.left/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.2.right" timestamp="1578697192290">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="1899" height="352" key="GridCell.Tab.2.right/0.30.1920.1050/-1920.30.1920.1050@0.30.1920.1050" timestamp="1576855887055" />
+    <state width="938" height="355" key="GridCell.Tab.2.right/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.3.bottom" timestamp="1578697192290">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="938" height="355" key="GridCell.Tab.3.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.3.center" timestamp="1578697192290">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="938" height="355" key="GridCell.Tab.3.center/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.3.left" timestamp="1578697192290">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="938" height="355" key="GridCell.Tab.3.left/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
+    <state width="938" height="355" key="GridCell.Tab.3.right" timestamp="1578697192290">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="938" height="355" key="GridCell.Tab.3.right/0.30.1920.1050@0.30.1920.1050" timestamp="1578697192290" />
     <state x="461" y="196" key="SettingsEditor" timestamp="1574780487561">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

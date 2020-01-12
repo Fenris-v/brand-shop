@@ -8,7 +8,7 @@ $(document).ready(function () {
             loop: true,
             margin: 10,
             nav: false,
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
             responsiveClass: false,
@@ -91,22 +91,68 @@ $(document).ready(function () {
                     itemsList.append('<div class="item" />');
                     var item = $('.item').last();
 
-                    console.log(data.items[i].id_product);
                     item.attr('data-id', data.items[i].id_product);
 
                     item.append('<div class="item__img" />');
                     var itemImg = $('.item__img').last();
 
-                    itemImg.append('<img src="' + data.items[i].img +'" alt="item">');
+                    itemImg.append('<img src="' + data.items[i].img + '" alt="item">');
                     itemImg.append('<div class="item__img__cart" />');
                     itemImg.append('<a class="btn__buy" href="#"><span>Add to Cart</span></a>');
 
                     item.append('<a href="' + data.items[i].href + '">Mango People T-shirt</a>');
 
-                    item.append('<div class="item__price">$' + data.items[i].price + '</div>');
+                    item.append('<div class="item__price">$' + parseFloat(data.items[i].price).toFixed(2) + '</div>');
+
+                    if ($('.items__link a').parent().hasClass('items__paging__link')) {
+                        $('.item').addClass('product');
+                    }
                 }
             }
         });
-
     });
+
+    /**
+     * CART HOVER
+     */
+    $('.cart').hover(function () {
+        $('.cart__items').stop(true, true).fadeIn();
+    }, function () {
+        $('.cart__items').stop(true, true).fadeOut();
+    });
+
+    /**
+     * VALIDATE FORM
+     */
+    $('#loginForm').validate({
+        rules: {
+            login__password: {
+                required: true,
+                minlength: 6
+            },
+            login__email: {
+                required: false,
+                email: true
+            }
+        },
+        messages: {
+            login__password: {
+                required: '',
+                minlength: 'Minimal length 6 symbols'
+            },
+            login__email: {
+                required: '',
+                minlength: '',
+                email: ''
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        }
+    });
+
+    /**
+     * VALIDATE FORM
+     */
+    $('#coupon').mask('000-0000');
 });

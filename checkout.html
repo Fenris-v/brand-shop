@@ -155,7 +155,7 @@
                 </form>
             </div>
             <div class="shipping_half">
-                <form action="#" method="post">
+                <form action="#" method="post" id="loginForm">
                     <div class="shipping_half__title">
                         Already registed?
                     </div>
@@ -166,13 +166,13 @@
                         <li>
                             <label>
                                 EMAIL ADDRESS<span>*</span>
-                                <input type="text">
+                                <input name="login__email" type="text">
                             </label>
                         </li>
                         <li>
                             <label>
                                 PASSWORD<span>*</span>
-                                <input type="text">
+                                <input name="login__password" type="password">
                             </label>
                         </li>
                     </ul>
@@ -270,9 +270,16 @@
     </div>
 </footer>
 
+<div class="itemAdded">
+    Item added in cart!
+</div>
+
 <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="bower_components/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+<script src="bower_components/jquery-mask-plugin/dist/jquery.mask.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
+<script src="js/cart.js" type="text/javascript"></script>
 <script src="js/hamburger.js" type="text/javascript"></script>
 
 </body>

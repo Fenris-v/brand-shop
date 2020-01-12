@@ -193,31 +193,35 @@
                                     <input id="state" placeholder="State" type="text" name="state">
                                 </label>
                                 <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-
-                                <script>
-                                    $(document).ready(function () {
-                                        var data = [],
-                                            item;
-                                        var params = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-                                        for (var i = 0; i < params.length; i++) {
-                                            item = params[i].split('=');
-                                            // data.push(item[0]);
-                                            data[item[0]] = item[1];
-                                        }
-                                        console.log(data);
-                                        console.log(data.state);
-
-                                        if (data.state && data.state !== "") $('#state').attr('value', data.state);
-                                    });
-                                </script>
-
                             </li>
                             <li>
                                 <label>
-                                    <input placeholder="Postcode / Zip" type="text">
+                                    <input id="postcode" placeholder="Postcode / Zip" type="text">
                                 </label>
                             </li>
                             <li><input type="submit" value="get a quote"></li>
+
+                            <script>
+                                $(document).ready(function () {
+                                    var data = [],
+                                        item;
+                                    var params = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                                    // params = decodeURI(params);
+                                    console.log(params);
+                                    for (var i = 0; i < params.length; i++) {
+                                        item = params[i].split('=');
+                                        // data.push(item[0]);
+                                        data[item[0]] = decodeURI(item[1]);
+                                    }
+                                    console.log(data);
+                                    console.log(data.state);
+                                    // params.
+                                    // data = urlencode(iconv("UTF-8", "windows-1251", data));
+
+                                    if (data.state && data.state !== "") $('#state').attr('value', data.state);
+                                    if (data.postcode && data.postcode !== "") $('#postcode').attr('value', data.postcode);
+                                });
+                            </script>
                         </ul>
                     </div>
                     <div class="cartPage__form">
